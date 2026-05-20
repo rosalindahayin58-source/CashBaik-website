@@ -92,7 +92,7 @@ body {
 
 /* HERO */
 .hero {
-    min-height: 100vh;
+    min-height: auto;
     padding: 110px 8% 50px; /* Ruang atas dikurangi */
     background: linear-gradient(135deg, #ecf4ff, #f6fbff);
     display: flex;
@@ -575,5 +575,39 @@ body {
 
     #checkBtn {
         width: 100%;
+    }
+
+    /* FIX HERO MOBILE */
+    @media  (max-width: 760px) {
+
+        .hero-container {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .hero-content {
+            width: 100%;
+            order: 2;
+        }
+
+        .hero-image {
+            width: 100%;
+            order: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            width: 85%;
+            max-width: 320px;
+            min-width: 220px;
+        }
+        .hero-content h1 {
+            font-size: 52px;
+            line-height: 1.1;
+        }
+        .hero-content p {
+            font-size: 16px;
+        }
     }
 }
