@@ -1,12 +1,15 @@
+/* ==========================================
+   PERBAIKAN KOTAK TOMBOL CTA (AGAR JELAS)
+   ========================================== */
+
 .cta-section {
-    background: #1068ed; /* Latar belakang Navy resmi */
+    background: #1b2b7a; /* Latar belakang Navy resmi */
     color: #ffffff;
     padding: 80px 8%;
     text-align: center;
     border-radius: 20px; /* Membuat sudut kotak melengkung rapi */
     margin: 50px auto;
     width: 84%;
-    box-shadow: 0 10px 30px rgba(16, 104, 237, 0.2);
 }
 
 .cta-section h2 {
