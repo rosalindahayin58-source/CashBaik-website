@@ -652,4 +652,20 @@ body {
         background: #dbe4ff;
         transform: translateY(-3px);
     }
+    .cta-buttons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .secondary {
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+    }
+    
+    .secondary:hover {
+        background: white;
+        color: #2447d5;
+    }
 }
