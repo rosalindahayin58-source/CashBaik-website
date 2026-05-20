@@ -273,7 +273,24 @@ body {
 /* ==========================================================================
    MERCHANT PROMO SECTION
    ========================================================================== */
-.merchant-section {
+    .merchant-icon{
+    width: 80px;
+    height: 80px;
+    background: #f1f5f9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.merchant-icon img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+   .merchant-section {
     padding: 100px 8%;
 }
 
