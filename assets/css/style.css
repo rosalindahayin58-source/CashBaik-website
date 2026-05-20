@@ -1,3 +1,18 @@
+/* ==========================================
+   CASHBAIK OFFICIAL COLOR PALETTE & STYLES
+   ========================================== */
+
+:root {
+    --primary-blue: #1068ed;       /* Biru Khas Cashbaik */
+    --hover-blue: #0b1ec7;         /* Biru Saat Hover */
+    --dark-navy: #1b2b7a;          /* Navy Gelap untuk Kontras Tinggi */
+    --accent-gold: #ffd54a;        /* Kuning Emas Cashbaik */
+    --accent-gold-hover: #fff0b3;  /* Kuning Terang Saat Hover */
+    --bg-light: #f5f7fb;           /* Latar Belakang Konten */
+    --text-dark: #222222;          /* Warna Teks Utama */
+    --text-muted: #555555;         /* Warna Teks Pendukung */
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -10,8 +25,8 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #f5f7fb;
-    color: #222;
+    background: var(--bg-light);
+    color: var(--text-dark);
     overflow-x: hidden;
     padding-top: 90px;
 }
@@ -30,19 +45,10 @@ body {
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
 
-.brand-logo {
-    display: flex;
-    align-items: center;
-}
-
-.brand-logo img {
-    max-width: 100px !important;
+.logo img {
+    max-width: 180px;
     height: auto;
     object-fit: contain;
-}
-
-.brand-logo span {
-    color: #1429e9;
 }
 
 .nav-menu {
@@ -58,20 +64,20 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #555;
+    color: var(--text-muted);
     font-weight: 600;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #1429e9;
+    color: var(--primary-blue);
 }
 
 .btn-register {
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 12px;
-    background: #1429e9;
+    background: var(--primary-blue);
     color: white;
     cursor: pointer;
     font-weight: 600;
@@ -79,7 +85,7 @@ body {
 }
 
 .btn-register:hover {
-    background: #0b1ec7;
+    background: var(--hover-blue);
     transform: translateY(-2px);
 }
 
@@ -90,10 +96,10 @@ body {
     color: #333;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
     min-height: auto;
-    padding: 110px 8% 50px;
+    padding: 80px 8% 80px;
     background: linear-gradient(135deg, #ecf4ff, #f6fbff);
     display: flex;
     align-items: center;
@@ -115,27 +121,30 @@ body {
 .trust-badge {
     display: inline-block;
     background: #e0e7ff;
-    color: #1429e9;
+    color: var(--primary-blue);
     font-weight: 600;
-    padding: 6px 16px;
+    padding: 8px 18px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 14px;
 }
 
 .hero-content h1 {
-    font-size: 54px;
-    line-height: 1.15;
+    font-size: 52px;
+    color: var(--dark-navy);
+    line-height: 1.2;
     margin-bottom: 20px;
+    font-weight: 800;
 }
 
 .hero-content p {
     font-size: 18px;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.7;
     margin-bottom: 35px;
 }
 
+/* SEARCH ACTION BOX */
 .action-box {
     display: flex;
     align-items: center;
@@ -150,13 +159,14 @@ body {
     align-items: center;
     padding: 15px 18px;
     background: white;
-    border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
 }
 
 .search-icon {
-    margin-right: 10px;
-    color: #888;
+    margin-right: 12px;
+    color: #a0aec0;
 }
 
 .input-group input {
@@ -164,22 +174,24 @@ body {
     border: none;
     outline: none;
     font-size: 16px;
+    color: var(--text-dark);
 }
 
 #checkBtn {
-    padding: 16px 25px;
+    padding: 16px 32px;
     border: none;
     border-radius: 16px;
-    background: #1429e9;
+    background: var(--primary-blue);
     color: white;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
     transition: 0.3s;
+    box-shadow: 0 4px 14px rgba(16, 104, 237, 0.3);
 }
 
 #checkBtn:hover {
-    background: #0b1ec7;
+    background: var(--hover-blue);
     transform: translateY(-3px);
 }
 
@@ -190,29 +202,171 @@ body {
 
 .hero-image img {
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     animation: floating 3s ease-in-out infinite;
 }
 
 @keyframes floating {
     0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
+    50% { transform: translateY(-12px); }
     100% { transform: translateY(0px); }
 }
 
-/* CTA SECTION */
-.cta-section {
-    background: #617adf;
+/* HOW IT WORKS / CARA KERJA */
+.how-it-works {
+    padding: 100px 8%;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: var(--dark-navy);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.section-header p {
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.section-header h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: var(--primary-blue);
+}
+
+.steps-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    min-width: 220px;
+    max-width: 280px;
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step-icon {
+    font-size: 22px;
+    font-weight: 800;
     color: white;
-    padding: 60px 8%;
-    border-radius: 24px;
-    margin: 80px auto;
-    width: 85%;
-    text-align: left;
+    background: var(--primary-blue);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 10px rgba(16, 104, 237, 0.2);
+}
+
+.step h4 {
+    font-size: 18px;
+    color: var(--dark-navy);
+    margin-bottom: 12px;
+}
+
+.step p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* MERCHANT SECTION */
+.section-title {
+    text-align: center;
+    padding-top: 80px;
+    background: var(--bg-light);
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: var(--dark-navy);
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: var(--text-muted);
+}
+
+.features {
+    display: flex;
+    gap: 30px;
+    padding: 40px 8% 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--bg-light);
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid #edf2f7;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+}
+
+.feature-card img {
+    max-width: 140px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    color: var(--dark-navy);
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* BOTTOM CTA SECTION */
+.cta-section {
+    background: var(--dark-navy);
+    color: white;
+    padding: 90px 8%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta-section h2 {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 800;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -221,91 +375,129 @@ body {
 .cta-section p {
     font-size: 18px;
     line-height: 1.8;
-    max-width: 800px;
-    margin-bottom: 30px;
+    max-width: 700px;
+    margin-bottom: 35px;
+    color: #e2e8f0;
 }
 
-/* CTA BUTTONS */
 .cta-buttons {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
+/* Tombol Utama - Kuning Emas */
 .cta-button {
     display: inline-block;
-    background: #ffd54a;
-    color: #1b2b7a;
-    padding: 14px 32px;
-    border-radius: 12px;
+    background: var(--accent-gold);
+    color: var(--dark-navy);
+    padding: 16px 36px;
+    border-radius: 14px;
     text-decoration: none;
     font-weight: 700;
     transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 213, 74, 0.3);
 }
 
 .cta-button:hover {
-    background: #fff0b3;
+    background: var(--accent-gold-hover);
     transform: translateY(-3px);
 }
 
-.cta-button:visited {
-    color: #1b2b7a;
-}
-
-.secondary {
+/* Tombol Sekunder - Transparan dengan Border Kuning */
+.cta-button.secondary {
     background: transparent;
-    border: 2px solid #ffd54a;
-    color: #ffd54a;
+    border: 2px solid var(--accent-gold);
+    color: var(--accent-gold);
+    box-shadow: none;
 }
 
-.secondary:hover {
+.cta-button.secondary:hover {
     background: white;
-    color: #2447d5;
+    color: var(--hover-blue);
+    border-color: white;
 }
 
-.secondary:visited {
-    color: #ffd54a;
+/* FOOTER */
+.footer {
+    background: #0f172a;
+    color: #94a3b8;
+    padding: 80px 8% 30px;
 }
 
-/* RESPONSIVE */
-@media(max-width: 768px) {
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 50px;
+}
 
-    .hero-content h1 {
-        font-size: 38px;
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col img {
+    margin-bottom: 20px;
+    max-width: 160px;
+}
+
+.footer-col h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-col a {
+    display: block;
+    color: #94a3b8;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: var(--accent-gold);
+}
+
+.footer-col p {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.footer-col p i {
+    margin-right: 8px;
+    color: var(--primary-blue);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #334155;
+    font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
     }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    .hero-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .cta-section {
-        width: 92%;
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    .cta-section h2 {
-        font-size: 32px;
-    }
-
-    .cta-section p {
-        font-size: 16px;
-    }
-
-    .cta-buttons {
-        justify-content: center;
-    }
-
     .nav-menu {
         display: none;
     }
-
     .hamburger {
         display: block;
+    }
+    .hero {
+        padding: 60px 5% 60px;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .cta-section h2 {
+        font-size: 30px;
     }
 }
