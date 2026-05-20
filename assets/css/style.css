@@ -610,4 +610,46 @@ body {
             font-size: 16px;
         }
     }
+
+    /*CTA SECTION */
+    .cta-section {
+        background: #2447d5;
+        color: white;
+        padding: 60px 8%;
+        border-radius: 24px;
+        margin: 80px auto;
+        width: 85%;
+        text-align: left;
+    }
+
+    .cta-section h2 {
+        font-size: 48px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .cta-section p {
+        font-size: 18px;
+        line-height: 1.8;
+        max-width: 800px;
+        margin-bottom: 30px;
+    }
+
+    /*BUTTON */
+    .cta-button {
+        display: inline-block;
+        background: white;
+        color: #2447d5;
+        padding: 14px 32px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background: #dbe4ff;
+        transform: translateY(-3px);
+    }
 }
