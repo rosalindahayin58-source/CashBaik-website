@@ -639,8 +639,8 @@ body {
     /*BUTTON */
     .cta-button {
         display: inline-block;
-        background: white;
-        color: #192d7e;
+        background: #ffd54a;
+        color: #1b2b7a;
         padding: 14px 32px;
         border-radius: 12px;
         text-decoration: none;
@@ -660,8 +660,8 @@ body {
 
     .secondary {
         background: transparent;
-        border: 2px solid white;
-        color: white;
+        border: 2px solid #ffd54a;
+        color: #ffd54a;
     }
     
     .secondary:hover {
