@@ -273,20 +273,20 @@ body {
 /* ==========================================================================
    MERCHANT PROMO SECTION
    ========================================================================== */
-    .merchant-icon{
-    width: 80px;
-    height: 80px;
-    background: #f1f5f9;
-    border-radius: 50%;
+.merchant-icon{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 20px;
+    background: #f8fafc;
+    border-radius: 20px;
 }
 
 .merchant-icon img{
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
 }
 
@@ -311,26 +311,25 @@ body {
 }
 
 .merchant-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
 }
 
 .merchant-card {
-    background: var(--white);
-    border: 1px solid #e2e8f0;
+    background: #ffffff;
     border-radius: 20px;
-    padding: 40px;
-    width: 320px;
+    padding: 35px 25px;
     text-align: center;
-    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+    border: 1px solid #f1f5f9;
 }
 
 .merchant-card:hover {
-    box-shadow: 0 15px 35px rgba(27, 43, 122, 0.1);
-    border-color: transparent;
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.10);
 }
 
 .merchant-logo-wrapper {
@@ -353,8 +352,8 @@ body {
 
 .merchant-card h3 {
     font-size: 22px;
-    margin-bottom: 10px;
-    color: var(--primary-color);
+    color: #1b2b7a;
+    margin-bottom: 12px;
 }
 
 .promo-badge {
@@ -369,8 +368,9 @@ body {
 }
 
 .merchant-card p {
-    font-size: 14px;
-    color: var(--text-light);
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.6;
 }
 
 /* ==========================================================================
