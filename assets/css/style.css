@@ -65,6 +65,28 @@ body{
     color:var(--primary);
 }
 
+/* NAVBAR ACTIVE EFFECT */
+
+.nav-links a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0%;
+    height:3px;
+    background:var(--primary);
+    border-radius:10px;
+    transition:.3s;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after{
+    width:100%;
+}
+
+.nav-links a.active{
+    color:var(--primary);
+} 
+
 .btn-register{
     background:var(--primary);
     color:#fff;
@@ -626,25 +648,4 @@ body{
         font-size:34px;
     }
 
-    /*NAVBAR ACTIVE EFECT*/
-    .nav-links a::after{
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:0%;
-    height:3px;
-    background:var(--primary);
-    border-radius:10px;
-    transition:.3s;
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after{
-    width:100%;
-}
-
-.nav-links a.active{
-    color:var(--primary);
-}
 }
