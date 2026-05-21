@@ -1,3 +1,6 @@
+/* ==========================================================================
+   RESET & VARIABEL GLOBAL
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +8,7 @@
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
- 
+
 :root {
     --primary-color: #1b2b7a;
     --accent-color: #ffd54a;
@@ -14,13 +17,13 @@
     --bg-light: #f8fafc;
     --white: #ffffff;
 }
- 
+
 body {
     background-color: var(--white);
     color: var(--text-dark);
     line-height: 1.6;
 }
- 
+
 /* ==========================================================================
    NAVBAR COMPONENT
    ========================================================================== */
@@ -35,18 +38,18 @@ body {
     top: 0;
     z-index: 1000;
 }
- 
+
 .navbar .logo img {
     height: 45px;
     object-fit: contain;
 }
- 
+
 .nav-menu {
     display: flex;
     align-items: center;
     gap: 40px;
 }
- 
+
 .nav-links a {
     text-decoration: none;
     color: var(--text-light);
@@ -54,12 +57,12 @@ body {
     margin-right: 25px;
     transition: color 0.3s ease;
 }
- 
+
 .nav-links a:hover, .nav-links a.active {
     color: var(--primary-color);
     font-weight: 600;
 }
- 
+
 .btn-register {
     background: var(--primary-color);
     color: var(--white);
@@ -70,19 +73,19 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
 }
- 
+
 .btn-register:hover {
     background: #13205c;
     transform: translateY(-2px);
 }
- 
+
 .hamburger {
     display: none;
     font-size: 24px;
     cursor: pointer;
     color: var(--primary-color);
 }
- 
+
 /* ==========================================================================
    HERO SECTION
    ========================================================================== */
@@ -90,18 +93,18 @@ body {
     padding: 80px 8%;
     background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
 }
- 
+
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
 }
- 
+
 .hero-content {
     flex: 1;
 }
- 
+
 .trust-badge {
     display: inline-flex;
     align-items: center;
@@ -114,7 +117,7 @@ body {
     font-weight: 600;
     margin-bottom: 24px;
 }
- 
+
 .hero-content h1 {
     font-size: 48px;
     font-weight: 800;
@@ -122,18 +125,18 @@ body {
     margin-bottom: 20px;
     color: var(--primary-color);
 }
- 
+
 .hero-content h1 span {
     color: #2563eb;
 }
- 
+
 .hero-content p {
     color: var(--text-light);
     font-size: 18px;
     margin-bottom: 35px;
     max-width: 540px;
 }
- 
+
 .action-box {
     display: flex;
     background: var(--white);
@@ -142,26 +145,26 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     max-width: 500px;
 }
- 
+
 .input-group {
     display: flex;
     align-items: center;
     flex: 1;
     padding-left: 12px;
 }
- 
+
 .search-icon {
     color: var(--text-light);
     margin-right: 10px;
 }
- 
+
 .input-group input {
     border: none;
     outline: none;
     width: 100%;
     font-size: 16px;
 }
- 
+
 #checkBtn {
     background: var(--accent-color);
     color: var(--primary-color);
@@ -174,27 +177,27 @@ body {
     transition: background 0.3s;
     white-space: nowrap;
 }
- 
+
 #checkBtn:hover {
     background: #e6be39;
 }
- 
+
 .hero-image {
     flex: 1;
     display: flex;
     justify-content: center;
 }
- 
+
 .hero-image img {
     max-width: 85%;
     animation: float 4s ease-in-out infinite;
 }
- 
+
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-15px); }
 }
- 
+
 /* ==========================================================================
    HOW IT WORKS SECTION
    ========================================================================== */
@@ -202,33 +205,33 @@ body {
     padding: 100px 8%;
     background: var(--bg-light);
 }
- 
+
 .section-header {
     text-align: center;
     margin-bottom: 60px;
 }
- 
+
 .section-header h2 {
     font-size: 36px;
     color: var(--primary-color);
     font-weight: 800;
     margin-bottom: 15px;
 }
- 
+
 .section-header p {
     color: var(--text-light);
     max-width: 700px;
     margin: 0 auto;
     font-size: 16px;
 }
- 
+
 .steps-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 24px;
     align-items: stretch;
 }
- 
+
 .step-card {
     background: var(--white);
     padding: 35px 25px;
@@ -239,12 +242,12 @@ body {
     display: flex;
     flex-direction: column;
 }
- 
+
 .step-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
 }
- 
+
 .step-icon {
     width: 45px;
     height: 45px;
@@ -259,21 +262,21 @@ body {
     margin-bottom: 20px;
     flex-shrink: 0;
 }
- 
+
 .step-card h4 {
     font-size: 16px;
     color: var(--primary-color);
     margin-bottom: 12px;
     line-height: 1.3;
 }
- 
+
 .step-card p {
     font-size: 14px;
     color: var(--text-light);
     line-height: 1.6;
     flex: 1;
 }
- 
+
 /* ==========================================================================
    MERCHANT PROMO SECTION
    ========================================================================== */
@@ -281,24 +284,24 @@ body {
     padding: 100px 8%;
     background: #eef2f7;
 }
- 
+
 .section-title {
     text-align: center;
     margin-bottom: 60px;
 }
- 
+
 .section-title h2 {
     font-size: 40px;
     color: var(--text-dark);
     font-weight: 800;
     margin-bottom: 10px;
 }
- 
+
 .section-title p {
     color: var(--text-light);
     font-size: 16px;
 }
- 
+
 .merchant-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -307,7 +310,7 @@ body {
     max-width: 1100px;
     margin: 0 auto;
 }
- 
+
 .merchant-card {
     background: #ffffff;
     border-radius: 24px;
@@ -320,12 +323,12 @@ body {
     flex-direction: column;
     align-items: center;
 }
- 
+
 .merchant-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.11);
 }
- 
+
 .merchant-icon {
     width: 130px;
     height: 130px;
@@ -335,31 +338,31 @@ body {
     margin: 0 auto 28px;
     flex-shrink: 0;
 }
- 
+
 .merchant-icon img {
     width: 120px;
     height: 120px;
     object-fit: contain;
 }
- 
+
 .merchant-card h3 {
     font-size: 20px;
     color: var(--text-dark);
     margin-bottom: 12px;
     font-weight: 700;
 }
- 
+
 .promo-badge {
     display: none;
 }
- 
+
 .merchant-card p {
     font-size: 15px;
     color: var(--text-light);
     line-height: 1.7;
     max-width: 260px;
 }
- 
+
 /* ==========================================================================
    CTA SECTION
    ========================================================================== */
@@ -369,13 +372,13 @@ body {
     padding: 80px 8%;
     text-align: center;
 }
- 
+
 .cta-section h2 {
     font-size: 36px;
     font-weight: 800;
     margin-bottom: 16px;
 }
- 
+
 .cta-section p {
     font-size: 18px;
     opacity: 0.85;
@@ -384,14 +387,14 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
- 
+
 .cta-buttons {
     display: flex;
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
 }
- 
+
 .cta-button {
     display: inline-flex;
     align-items: center;
@@ -403,23 +406,23 @@ body {
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
- 
+
 .cta-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
- 
+
 .primary-cta {
     background: var(--accent-color);
     color: var(--primary-color);
 }
- 
+
 .secondary-cta {
     background: rgba(255, 255, 255, 0.15);
     color: var(--white);
     border: 2px solid rgba(255, 255, 255, 0.4);
 }
- 
+
 /* ==========================================================================
    FOOTER COMPONENT
    ========================================================================== */
@@ -428,30 +431,30 @@ body {
     color: #94a3b8;
     padding: 80px 8% 30px;
 }
- 
+
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr repeat(3, 1fr);
     gap: 50px;
     margin-bottom: 60px;
 }
- 
+
 .footer-col-brand .footer-logo {
     height: 40px;
     margin-bottom: 20px;
     filter: brightness(0) invert(1);
 }
- 
+
 .footer-col-brand p {
     max-width: 280px;
 }
- 
+
 .footer-col h4 {
     color: var(--white);
     font-size: 18px;
     margin-bottom: 24px;
 }
- 
+
 .footer-col a {
     display: block;
     color: #94a3b8;
@@ -459,29 +462,29 @@ body {
     margin-bottom: 12px;
     transition: color 0.3s;
 }
- 
+
 .footer-col a:hover {
     color: var(--white);
 }
- 
+
 .footer-col p {
     margin-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
- 
+
 .footer-col i {
     color: var(--accent-color);
 }
- 
+
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
     border-top: 1px solid #334155;
     font-size: 14px;
 }
- 
+
 /* ==========================================================================
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
@@ -490,7 +493,7 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
- 
+
 @media (max-width: 992px) {
     .hero-container {
         flex-direction: column;
@@ -502,7 +505,7 @@ body {
     .merchant-grid { grid-template-columns: repeat(2, 1fr); }
     .footer-grid { grid-template-columns: repeat(2, 1fr); }
 }
- 
+
 @media (max-width: 768px) {
     .nav-menu { display: none; }
     .hamburger { display: block; }
@@ -512,7 +515,7 @@ body {
     .hero-content h1 { font-size: 32px; }
     .cta-section h2 { font-size: 28px; }
 }
- 
+
 @media (max-width: 480px) {
     .steps-container { grid-template-columns: 1fr; }
     .hero { padding: 60px 5%; }
