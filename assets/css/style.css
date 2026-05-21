@@ -279,17 +279,17 @@ body {
    ========================================================================== */
 .merchant-section {
     padding: 100px 8%;
-    background: var(--white);
+    background: #eef2f7;
 }
  
 .section-title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
  
 .section-title h2 {
-    font-size: 36px;
-    color: var(--primary-color);
+    font-size: 40px;
+    color: var(--text-dark);
     font-weight: 800;
     margin-bottom: 10px;
 }
@@ -304,16 +304,18 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-items: stretch;
+    max-width: 1100px;
+    margin: 0 auto;
 }
  
 .merchant-card {
     background: #ffffff;
-    border-radius: 20px;
-    padding: 40px 30px;
+    border-radius: 24px;
+    padding: 50px 36px 40px;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #f1f5f9;
+    border: 1px solid rgba(0,0,0,0.04);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,50 +323,41 @@ body {
  
 .merchant-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.11);
 }
  
 .merchant-icon {
-    width: 90px;
-    height: 90px;
-    background: #f8fafc;
-    border-radius: 20px;
+    width: 130px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 24px;
-    padding: 12px;
+    margin: 0 auto 28px;
     flex-shrink: 0;
 }
  
 .merchant-icon img {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
 }
  
 .merchant-card h3 {
-    font-size: 22px;
-    color: var(--primary-color);
+    font-size: 20px;
+    color: var(--text-dark);
     margin-bottom: 12px;
     font-weight: 700;
 }
  
 .promo-badge {
-    display: inline-block;
-    background: #dbeafe;
-    color: #2563eb;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 16px;
+    display: none;
 }
  
 .merchant-card p {
     font-size: 15px;
     color: var(--text-light);
     line-height: 1.7;
+    max-width: 260px;
 }
  
 /* ==========================================================================
