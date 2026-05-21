@@ -1,181 +1,351 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cashbaik - Belanja Cerdas</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CashBaik - Belanja Lebih Hemat</title>
+
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- ✅ PATH CSS DIPERBAIKI -->
-    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html">
-                <img src="assets/images/logo.jpg" width="200" alt="CashBaik Logo">
+            <a href="#">
+                <img src="assets/images/logo.jpg" alt="CashBaik Logo">
             </a>
         </div>
+
         <div class="nav-menu" id="navMenu">
             <div class="nav-links">
                 <a href="#beranda">Beranda</a>
                 <a href="#cara-kerja">Cara Kerja</a>
-                <a href="#merchant">Merchant Promo</a>
-                <a href="#footer">Bantuan</a>
+                <a href="#merchant">Merchant</a>
+                <a href="#footer">Kontak</a>
             </div>
+
             <div class="nav-right">
-                <button class="btn-register">Mulai Cashback</button>
+                <a href="https://cashbaik.com" target="_blank" class="btn-register">
+                    Mulai Cashback
+                </a>
             </div>
         </div>
+
         <div class="hamburger" id="hamburgerBtn">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section class="hero" id="beranda">
+
         <div class="hero-container">
+
             <div class="hero-content">
+
                 <div class="trust-badge">
-                    <i class="fas fa-users"></i> Dipercaya oleh 50.000+ Pengguna
+                    <i class="fas fa-users"></i>
+                    Dipercaya 50.000+ Pengguna
                 </div>
-                <h1>Belanja Cerdas, <br><span>Cairkan Cashbacknya!</span></h1>
-                <p>Beli barang di merchant favoritmu lewat Cashbaik dan nikmati cashback otomatis ke dompetmu tanpa ribet.</p>
+
+                <h1>
+                    Belanja Lebih Hemat
+                    <span>Bersama CashBaik</span>
+                </h1>
+
+                <p>
+                    Dapatkan cashback dari berbagai merchant favorit seperti Shopee,
+                    Tokopedia, Lazada dan marketplace populer lainnya.
+                </p>
+
                 <div class="action-box">
+
                     <div class="input-group">
-                        <span class="search-icon"><i class="fas fa-search"></i></span>
-                        <input type="text" id="merchantInput" placeholder="Cari merchant (contoh: Shopee)...">
+                        <span class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+
+                        <input type="text"
+                            id="merchantInput"
+                            placeholder="Cari merchant favorit..." />
                     </div>
-                    <button id="checkBtn">Cek Promo</button>
+
+                    <button id="checkBtn">
+                        Cek Promo
+                    </button>
+
                 </div>
+
+                <div class="hero-buttons">
+                    <a href="https://cashbaik.com"
+                        target="_blank"
+                        class="hero-btn primary-btn">
+                        Kunjungi Website
+                    </a>
+
+                    <a href="https://cashbaik.com"
+                        target="_blank"
+                        class="hero-btn secondary-btn">
+                        Download Aplikasi
+                    </a>
+                </div>
+
             </div>
+
             <div class="hero-image">
-                <img src="https://cdn-icons-png.flaticon.com/512/2331/2331941.png" alt="Cashback Illustration">
+                <img src="https://cdn-icons-png.flaticon.com/512/2331/2331941.png"
+                    alt="Cashback Illustration">
             </div>
+
         </div>
+
     </section>
 
-    <!-- HOW IT WORKS SECTION -->
+    <!-- HOW IT WORKS -->
     <section class="how-it-works" id="cara-kerja">
+
         <div class="section-header">
             <h2>Bagaimana Cara Kerja CashBaik?</h2>
-            <p>Cashbaik adalah aplikasi yang dirancang untuk membantu Anda mengelola keuangan pribadi dengan mudah dan efisien. Berikut adalah cara kerja utama dari CashBaik:</p>
+
+            <p>
+                Belanja seperti biasa dan dapatkan cashback otomatis
+                dari setiap transaksi marketplace favoritmu.
+            </p>
         </div>
+
         <div class="steps-container">
+
             <div class="step-card">
                 <div class="step-icon">1</div>
                 <h4>Salin Link Produk</h4>
-                <p>Salin link produk yang ingin Anda beli dari berbagai marketplace favoritmu seperti Tokopedia, Shopee, Lazada, dan lainnya.</p>
+                <p>
+                    Salin link produk dari marketplace favoritmu.
+                </p>
             </div>
+
             <div class="step-card">
                 <div class="step-icon">2</div>
                 <h4>Buka CashBaik</h4>
-                <p>CashBaik otomatis mendeteksi link dari clipboard dan CashBaik akan membawa kamu ke halaman detail produk.</p>
+                <p>
+                    CashBaik akan otomatis mendeteksi link produk.
+                </p>
             </div>
+
             <div class="step-card">
                 <div class="step-icon">3</div>
-                <h4>Tekan "Beli di Marketplace"</h4>
-                <p>Cukup tekan tombol "Beli di Marketplace" dan kamu akan diarahkan langsung ke aplikasinya.</p>
+                <h4>Beli Produk</h4>
+                <p>
+                    Klik tombol beli dan lanjutkan ke marketplace.
+                </p>
             </div>
+
             <div class="step-card">
                 <div class="step-icon">4</div>
                 <h4>Selesaikan Pembayaran</h4>
-                <p>Bayar pesanan seperti biasa di marketplace favoritmu.</p>
+                <p>
+                    Bayar seperti biasa menggunakan metode pembayaran favoritmu.
+                </p>
             </div>
+
             <div class="step-card">
                 <div class="step-icon">5</div>
-                <h4>Cashback Diverifikasi</h4>
-                <p>Setelah transaksi berhasil, CashBaik memverifikasi order kamu. Setelah terverifikasi saldo cashback akan masuk.</p>
+                <h4>Dapatkan Cashback</h4>
+                <p>
+                    Cashback otomatis masuk setelah transaksi diverifikasi.
+                </p>
             </div>
+
         </div>
+
     </section>
 
-    <!-- MERCHANT PROMO SECTION -->
+    <!-- MERCHANT -->
     <section class="merchant-section" id="merchant">
+
         <div class="section-title">
             <h2>Merchant Populer</h2>
-            <p>Dapatkan cashback dari merchant favoritmu</p>
+            <p>
+                Cashback menarik dari merchant favoritmu
+            </p>
         </div>
+
         <div class="merchant-grid">
 
-            <!-- Shopee -->
             <div class="merchant-card">
+
                 <div class="merchant-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/1200px-Shopee.svg.png" alt="Shopee">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Shopee.svg"
+                        alt="Shopee">
                 </div>
+
                 <h3>Shopee</h3>
-                <p>Cashback hingga 10% khusus pengguna baru minggu ini.</p>
+
+                <p>
+                    Cashback hingga 10% untuk pengguna baru minggu ini.
+                </p>
+
+                <a href="https://cashbaik.com"
+                    target="_blank"
+                    class="merchant-btn">
+                    Lihat Promo
+                </a>
+
             </div>
 
-            <!-- Tokopedia -->
             <div class="merchant-card">
+
                 <div class="merchant-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Tokopedia_icon.svg/1200px-Tokopedia_icon.svg.png" alt="Tokopedia">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Tokopedia_logo.svg"
+                        alt="Tokopedia">
                 </div>
+
                 <h3>Tokopedia</h3>
-                <p>Promo flash sale dengan ekstra cashback setiap jam 12 siang.</p>
+
+                <p>
+                    Flash sale dan cashback tambahan setiap hari.
+                </p>
+
+                <a href="https://cashbaik.com"
+                    target="_blank"
+                    class="merchant-btn">
+                    Lihat Promo
+                </a>
+
             </div>
 
-            <!-- Lazada -->
             <div class="merchant-card">
+
                 <div class="merchant-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Lazada_Logo.svg/1200px-Lazada_Logo.svg.png" alt="Lazada">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Lazada_Logo.svg"
+                        alt="Lazada">
                 </div>
+
                 <h3>Lazada</h3>
-                <p>Nikmati voucher diskon hingga Rp40.000, gratis ongkir, dan cashback setiap hari.</p>
+
+                <p>
+                    Voucher diskon, gratis ongkir dan cashback harian.
+                </p>
+
+                <a href="https://cashbaik.com"
+                    target="_blank"
+                    class="merchant-btn">
+                    Lihat Promo
+                </a>
+
             </div>
 
         </div>
+
     </section>
 
-    <!-- CTA SECTION -->
+    <!-- CTA -->
     <section class="cta-section">
-        <h2>Belanja Lebih Hemat Bersama CashBaik</h2>
-        <p>Mulai dapatkan aplikasi Cashbaik sekarang dan nikmati Cashback dari setiap belanja favoritmu dengan lebih mudah dan menguntungkan. Download sekarang, kumpulkan Cashback setiap hari, dan ubah kebiasaan belanjamu jadi lebih hemat.</p>
+
+        <h2>
+            Mulai Hemat Bersama CashBaik
+        </h2>
+
+        <p>
+            Belanja lebih menguntungkan dengan cashback otomatis
+            dari setiap transaksi online favoritmu.
+        </p>
+
         <div class="cta-buttons">
-            <a href="#" class="cta-button primary-cta">
-                <i class="fas fa-globe"></i> Kunjungi Website
+
+            <a href="https://cashbaik.com"
+                target="_blank"
+                class="cta-button primary-cta">
+                <i class="fas fa-globe"></i>
+                Kunjungi Website
             </a>
-            <a href="#" class="cta-button secondary-cta">
-                <i class="fas fa-download"></i> Download Aplikasi
+
+            <a href="https://cashbaik.com"
+                target="_blank"
+                class="cta-button secondary-cta">
+                <i class="fas fa-download"></i>
+                Download Sekarang
             </a>
+
         </div>
+
     </section>
 
     <!-- FOOTER -->
     <footer class="footer" id="footer">
+
         <div class="footer-grid">
+
             <div class="footer-col footer-col-brand">
-                <!-- ✅ TAG IMG DIPERBAIKI (ditambah tanda > penutup) -->
-                <img src="assets/images/logo.jpg" class="footer-logo" width="150" alt="CashBaik Logo">
-                <p>Solusi belanja hemat dan terpercaya di Indonesia.</p>
+
+                <img src="assets/images/logo.jpg"
+                    class="footer-logo"
+                    alt="CashBaik Logo">
+
+                <p>
+                    Solusi belanja hemat terpercaya di Indonesia.
+                </p>
+
             </div>
+
             <div class="footer-col">
+
                 <h4>Navigasi</h4>
+
                 <a href="#beranda">Beranda</a>
                 <a href="#cara-kerja">Cara Kerja</a>
-                <a href="#merchant">Promo Merchant</a>
+                <a href="#merchant">Merchant</a>
+
             </div>
+
             <div class="footer-col">
-                <h4>Legal &amp; Bantuan</h4>
-                <a href="#">Kebijakan Privasi</a>
-                <a href="#">Syarat &amp; Ketentuan</a>
-                <a href="#">FAQ</a>
+
+                <h4>Bantuan</h4>
+
+                <a href="https://cashbaik.com" target="_blank">
+                    Website Resmi
+                </a>
+
+                <a href="https://cashbaik.com" target="_blank">
+                    FAQ
+                </a>
+
             </div>
+
             <div class="footer-col">
+
                 <h4>Hubungi Kami</h4>
-                <p><i class="fas fa-envelope"></i> bantuan@cashbaik.com</p>
-                <p><i class="fas fa-phone"></i> +62 812-3456-789</p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    bantuan@cashbaik.com
+                </p>
+
+                <p>
+                    <i class="fas fa-phone"></i>
+                    +62 812-3456-789
+                </p>
+
             </div>
+
         </div>
+
         <div class="footer-bottom">
-            <p>&copy; 2026 CashBaik. Semua Hak Dilindungi.</p>
+            <p>
+                © 2026 CashBaik. All Rights Reserved.
+            </p>
         </div>
+
     </footer>
 
-    <!-- ✅ PATH JS DIPERBAIKI -->
     <script src="script.js"></script>
 
 </body>
