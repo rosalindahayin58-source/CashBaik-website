@@ -251,11 +251,16 @@ body{
     border-radius:50%;
     background:var(--primary);
     color:#fff;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     font-weight:700;
-    margin-bottom:20px;
+    font-size: 18px;
+    line-height:1;
+
+    margin: 0 auto 20px auto;
 }
 
 .step-card h4{
