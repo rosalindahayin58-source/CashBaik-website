@@ -243,21 +243,18 @@ body{
 }
 
 .step-card:hover .step-icon {
-    transform:translateY(-5px) scale(1.08);
+   background: var(--primary);
+   color: #fff;
 }
 
 .step-icon{
     width:65px;
     height:65px;
-    border-radius:20%;
+    border-radius:20px;
 
-    background:linear-gradient(
-        135deg,
-        var(--primary),
-        var(--secondary)
-    );
+    background:#fff;
 
-    color:#fff;
+    color:var(--primary);
 
     display:flex;
     justify-content:center;
@@ -269,7 +266,7 @@ body{
 
     position: relative;
 
-    box-shadow: 0 10px 25px rgba(37,99,235,.25);
+    box-shadow: 0 10px 25px rgba(37,99,235,.15);
     
     transition:.3s;
 }
