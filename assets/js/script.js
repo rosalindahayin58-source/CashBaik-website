@@ -4,33 +4,33 @@ const hamburgerBtn = document.getElementById('hamburgerBtn');
 const navMenu = document.getElementById('navMenu');
 
 /* TOMBOL CEK PROMO */
-checkBtn.addEventListener('click', function(){
-    if(merchantInput.value == ''){
-        alert('Silakan masukkan nama merchant anda terlebih dahulu ');
+checkBtn.addEventListener('click', function() {
+    if (merchantInput.value.trim() === '') {
+        alert('Silakan masukkan nama merchant anda terlebih dahulu');
     } else {
         alert('Promo cashback untuk ' + merchantInput.value + ' berhasil ditemukan 🎉');
     }
 });
 
-/* ANIMASI JUDUL */
+/* ANIMASI JUDUL HERO */
 const heading = document.querySelector('.hero-content h1');
 
-heading.addEventListener('mouseover', function(){
+heading.addEventListener('mouseover', function() {
     heading.style.color = '#0762eb';
-    heading.style.transition = '0.3s';
+    heading.style.transition = 'color 0.3s';
 });
 
-heading.addEventListener('mouseout', function(){
-    heading.style.color = '#222';
+heading.addEventListener('mouseout', function() {
+    heading.style.color = '#1b2b7a'; /* sesuai --primary-color */
+    heading.style.transition = 'color 0.3s';
 });
 
 /* MENU HAMBURGER MOBILE */
 hamburgerBtn.addEventListener('click', function() {
     navMenu.classList.toggle('active');
-    
-    // Ganti ikon burger menjadi silang saat dibuka
+
     const icon = this.querySelector('i');
-    if(navMenu.classList.contains('active')) {
+    if (navMenu.classList.contains('active')) {
         icon.classList.remove('fa-bars');
         icon.classList.add('fa-times');
     } else {
