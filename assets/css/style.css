@@ -295,8 +295,8 @@ body{
 }
 
 .merchant-icon{
-    width:120px;
-    height:120px;
+    width:140px;
+    height:140px;
     margin:auto;
     display:flex;
     justify-content:center;
@@ -304,7 +304,8 @@ body{
 }
 
 .merchant-icon img{
-    width:100px;
+    width: 110px;
+    height: 110px;
     object-fit:contain;
 }
 
@@ -421,14 +422,6 @@ body{
     cursor:pointer;
 }
 
-@media(max-width:1100px){
-
-    .steps-container{
-        grid-template-columns:repeat(3,1fr);
-    }
-
-}
-
 @media(max-width:900px){
 
     .hero-container{
@@ -443,6 +436,33 @@ body{
     .action-box{
         margin:auto;
     }
+    
+    /*CARD MENJADI 1 BARIS*/
+    .steps-container {
+        grid-template-columns: repeat(5,1fr);
+        gap: 15px;
+    }
+
+    .step-card {
+        padding: 20px 14px;
+        min-height: 220px;
+    }
+
+    .step-card h4 {
+        font-size: 13px;
+    }
+
+    .step-card p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .step-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
 
     .merchant-grid{
         grid-template-columns:1fr 1fr;
@@ -456,6 +476,9 @@ body{
 
 @media(max-width:768px){
 
+    .steps-container{
+        grid-template-columns: 1fr;
+    }
     .nav-menu{
         display:none;
     }
