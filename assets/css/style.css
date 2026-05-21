@@ -191,16 +191,15 @@ body{
 }
 
 /* SECTION */
-
-.how-it-works,
-.merchant-section{
-    padding:100px 8%;
-}
-
 .how-it-works{
+    padding: 100px 8%;
     background:var(--bg);
 }
 
+.merchant-section {
+    padding: 50px 8%;
+    background: #eef2f7;
+}
 .section-header,
 .section-title{
     text-align:center;
@@ -254,7 +253,7 @@ body{
 
     background:linear-gradient(
         135deg,
-        var(--primary)
+        var(--primary),
         var(--secondary)
     );
 
@@ -272,7 +271,7 @@ body{
 
     box-shadow: 0 10px 25px rgba(37,99,235,.25);
     
-    transition: 3s;
+    transition:.3s;
 }
 
 .step-icon span {
@@ -316,11 +315,6 @@ body{
 }
 
 /* MERCHANT */
-
-.merchant-section{
-    background:#eef2f7;
-}
-
 .merchant-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
