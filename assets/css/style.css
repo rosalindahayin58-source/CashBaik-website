@@ -307,6 +307,12 @@ body{
 .step-card p{
     color:var(--light);
     font-size:14px;
+    line-height: 1.6;
+
+    word-break: break-word;
+    overflow-wrap: break-word;
+
+    white-space: normal;
 }
 
 /* MERCHANT */
@@ -475,8 +481,8 @@ body{
     }
 
     .step-card {
+        width: 180px;
         min-width: 180px;
-        flex-shrink: 0;
     }
     .section-header h2,
     .section-title h2 {
@@ -508,11 +514,13 @@ body{
 
     .step-card h4 {
         font-size: 13px;
+        line-height: 1.5;
     }
 
     .step-card p {
         font-size: 12px;
-        line-height: 1.5;
+        line-height: 1.6;
+        text-align: center;
     }
 
     .step-icon {
