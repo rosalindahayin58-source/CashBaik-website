@@ -424,6 +424,10 @@ body{
 
 @media(max-width:900px){
 
+    .section-header h2,
+    .section-title h2 {
+        font-size: 30px;
+    }
     .hero-container{
         grid-template-columns:1fr;
         text-align:center;
