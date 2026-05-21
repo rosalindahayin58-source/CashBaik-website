@@ -20,6 +20,7 @@ body{
     background:var(--white);
     color:var(--text);
     line-height:1.6;
+    font-size: 18px;
 }
 
 /* NAVBAR */
@@ -326,13 +327,7 @@ body{
 
 .step-card p{
     color:var(--light);
-    font-size:14px;
-    line-height: 1.6;
-
-    word-break: break-word;
-    overflow-wrap: break-word;
-
-    white-space: normal;
+    font-size: 16px;
 }
 
 /* MERCHANT */
@@ -555,8 +550,7 @@ body{
     }
 
     .step-card h4 {
-        font-size: 16px;
-        line-height: 1.5;
+        font-size: 20px;
     }
 
     .step-card p {
@@ -645,6 +639,6 @@ body{
     }
 
     .hero-content h1{
-        font-size:34px;
+        font-size:44px;
     }
 }
