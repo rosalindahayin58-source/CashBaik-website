@@ -480,6 +480,17 @@ body{
         padding-bottom: 10px;
     }
 
+    .merchant-grid {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding-bottom: 10px;
+    }
+
+    .merchant-card  {
+        min-width: 260px;
+        flex-shrink: 0;
+    }
     .step-card {
         width: 180px;
         min-width: 180px;
@@ -528,10 +539,6 @@ body{
         height: 40px;
         font-size: 14px;
         margin-bottom: 15px;
-    }
-
-    .merchant-grid{
-        grid-template-columns:1fr 1fr;
     }
 
     .footer-grid{
