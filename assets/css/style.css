@@ -204,7 +204,7 @@ body{
 .section-header,
 .section-title{
     text-align:center;
-    margin-bottom:30px;
+    margin-bottom:35px;
 }
 
 .section-header h2,
@@ -617,12 +617,13 @@ body{
         padding:70px 5%;
     }
 
-    .how-it-works,
+    .how-it-works {
+        padding: 100px 8%;
+        background: var(--bg);
+    }
     .merchant-section {
-        background: #eef2f7;
-
         padding: 60px 8%;
-        padding-top: 40px;
+        background: #eef2f7;
     }
     .cta-section{
         padding:70px 5%;
