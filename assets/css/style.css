@@ -524,7 +524,6 @@ body{
 
      .cta-button{
         flex:1;
-        width:50%;
         padding:14px 10px;
         font-size:13px;
         text-align:center;
@@ -585,7 +584,7 @@ body{
         margin:auto auto 30px;
     }
 
-    .hero.buttons {
+    .hero-buttons {
         display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
