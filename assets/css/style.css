@@ -501,6 +501,18 @@ body{
 
 @media(max-width:900px){
 
+    .cta-buttons {
+        flex-wrap: nowrap;
+        justify-content:center;
+        gap: 15px;
+    }
+
+    .cta-button {
+        width:auto;
+        min-width:20px;
+        text-align:center;
+    }
+    
     .steps-container {
         display: flex;
         overflow-x:auto;
