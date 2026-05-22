@@ -609,67 +609,52 @@ body{
 
 @media(max-width:769px){
 
-    .cta-buttons{
-        display:flex !important;
-        flex-direction:row !important;
-        flex-wrap:nowrap !important;
-        justify-content:center;
-        align-items:center;
-        gap:12px;
-    }
-
-    .cta-button{
-        width:auto !important;
-        min-width:170px;
-        padding:14px 18px;
-        font-size:14px;
-        white-space:nowrap;
-    }
-
-    .steps-container{
-        grid-template-columns: 1fr;
-    }
-    .nav-menu{
-        display:none;
-    }
-
-    .nav-menu.active{
-        display:flex;
-        position:absolute;
-        top:85px;
-        left:0;
-        width:100%;
-        background:#fff;
-        flex-direction:column;
-        padding:25px;
-        box-shadow:0 10px 25px rgba(0,0,0,.08);
-    }
-
-    .nav-links{
-        flex-direction:column;
-        width:100%;
+    .navbar{
+        position:relative;
     }
 
     .hamburger{
         display:block;
+        z-index:1001;
     }
 
-    .steps-container{
-        grid-template-columns:1fr;
+    .nav-menu{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#fff;
+
+        display:none;
+        flex-direction:column;
+        align-items:flex-start;
+
+        padding:20px;
+
+        box-shadow:0 10px 25px rgba(0,0,0,.08);
     }
 
-    .merchant-grid{
-        grid-template-columns:1fr;
+    .nav-menu.active{
+        display:flex;
     }
 
-    .footer-grid{
-        grid-template-columns:1fr;
+    .nav-links{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        gap:20px;
     }
 
-    .hero-content h1{
-        font-size:46px;
+    .nav-right{
+        width:100%;
+        margin-top:20px;
     }
 
+    .btn-register{
+        display:block;
+        width:100%;
+        text-align:center;
+    }
 }
 
 @media(max-width:480px){
