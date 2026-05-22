@@ -392,18 +392,20 @@ body{
 /* CTA */
 
 .cta-section{
-    padding:90px 8%;
+    padding:80px 8%;
     background:linear-gradient(135deg,#1b2b7a,#3249b9);
     text-align:center;
     color:#fff;
 }
 
 .cta-section h2{
-    font-size:42px;
-    margin-bottom:20px;
+    font-size:48px;
+    margin-bottom:18px;
+    line-height: 1.3;
 }
 
 .cta-section p{
+    font-size:18px;
     max-width:700px;
     margin:auto auto 35px;
     opacity:.9;
@@ -412,15 +414,23 @@ body{
 .cta-buttons{
     display:flex;
     justify-content:center;
-    gap:15px;
+    align-items:center;
+    gap:20px;
     flex-wrap:wrap;
+    margin-top:20px;
 }
 
 .cta-button{
-    padding:15px 30px;
+    padding:16px 32px;
     border-radius:12px;
     text-decoration:none;
-    font-weight:700;
+    font-weight:600;
+    font-size:16px;
+    transition:.3s;
+}
+
+.cta-btton:hover {
+    transform:translateY(-3px);
 }
 
 .primary-cta{
