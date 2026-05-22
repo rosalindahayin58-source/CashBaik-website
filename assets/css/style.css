@@ -189,16 +189,27 @@ body{
 .hero-buttons{
     margin-top:25px;
     display:flex;
-    gap:15px;
-    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    flex-wrap:nowrap;
 }
 
 .hero-btn{
-    padding:14px 26px;
+     display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:14px 18px;
+
     border-radius:10px;
     text-decoration:none;
     font-weight:600;
     transition:.3s;
+
+    white-space:nowrap;
+    font-size:14px;
 }
 
 .primary-btn{
@@ -573,6 +584,22 @@ body{
     .hero-content p{
         margin:auto auto 30px;
     }
+
+    .hero.buttons {
+        display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    }
+
+    .hero-btn{
+    flex:1;
+    min-width:0;
+    padding:12px 10px;
+    font-size:13px;
+}
 
     .action-box{
         margin:auto;
