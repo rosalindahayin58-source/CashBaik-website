@@ -413,20 +413,19 @@ body{
 
 .cta-buttons{
     display:flex;
+    flex-direction:row;
     justify-content:center;
     align-items:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:20px;
+    gap:1px;
+    flex-wrap:nowrap;
 }
 
 .cta-button{
-    padding:16px 32px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:600;
-    font-size:16px;
-    transition:.3s;
+    flex:1;
+    min-width:0;
+    padding:14px 10px;
+    font-size:13px;
+    text-align:center;
 }
 
 .cta-button:hover {
@@ -507,15 +506,21 @@ body{
         flex-wrap:nowrap !important;
         justify-content:center;
         align-items:center;
-        gap:12px;
+        gap:10px;
+        flex-wrap:nowrap !important;
+        width:100%;
     }
 
      .cta-button{
-        width:auto !important;
-        min-width:170px;
-        padding:14px 18px;
-        font-size:14px;
-        white-space:nowrap;
+        flex:1;
+        width:50%;
+        padding:14px 10px;
+        font-size:13px;
+        text-align:center;
+    }
+
+    .cta-button i{
+        margin-right:6px;
     }
 
     .steps-container {
