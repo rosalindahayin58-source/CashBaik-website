@@ -427,16 +427,17 @@ body{
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    gap:1px;
+    gap:20px;
     flex-wrap:nowrap;
 }
 
 .cta-button{
     flex:1;
     min-width:0;
-    padding:14px 10px;
+    padding:14px 20px;
     font-size:13px;
     text-align:center;
+    border-radius:14px;
 }
 
 .cta-button:hover {
