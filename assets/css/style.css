@@ -448,15 +448,16 @@ body{
 
 .footer{
     background:#0f172a;
-    color:#94a3b8;
-    padding:80px 8% 30px;
+    color:#cbd5e1;
+    padding:55px 8% 20px;
 }
 
 .footer-grid{
     display:grid;
     grid-template-columns:2fr 1fr 1fr 1fr;
     gap:40px;
-    margin-bottom:50px;
+    margin-bottom:30px;
+    align-items:flex-start;
 }
 
 .footer-logo{
@@ -482,7 +483,8 @@ body{
 
 .footer-bottom{
     border-top:1px solid #334155;
-    padding-top:20px;
+    padding-top:15px;
+    margin-top:10px;
     text-align:center;
 }
 
