@@ -346,6 +346,25 @@ body{
     line-height:1.7;
 }
 
+/* SPLIDE FIX MOBILE */
+.splide__track{
+    overflow:hidden !important;
+}
+
+.splide__list{
+    display:flex;
+    align-items:stretch;
+}
+
+.splide__slide{
+    height:auto;
+    display:flex;
+}
+
+.splide__slide .step-card{
+    width:100%;
+}
+
 /* MOBILE */
 @media(max-width:768px){
 
@@ -583,10 +602,7 @@ body{
 
     flex-shrink:0;
     }
-    .step-card {
-        width: 180px;
-        min-width: 180px;
-    }
+    
     .section-header h2,
     .section-title h2 {
         font-size: 30px;
@@ -601,7 +617,7 @@ body{
     }
 
     .hero-buttons {
-        display:flex;
+    display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
     justify-content:center;
