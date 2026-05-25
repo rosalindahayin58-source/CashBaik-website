@@ -81,4 +81,30 @@ window.addEventListener("scroll", () => {
 
     });
 
+
+});
+
+/* SPLIDE SLIDER */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    new Splide('#caraKerjaSlider', {
+        type       : 'slide',
+        perPage    : 5,
+        gap        : '20px',
+        pagination : false,
+        arrows     : false,
+        drag       : true,
+
+        breakpoints: {
+            900: {
+                perPage: 2,
+            },
+
+            600: {
+                perPage: 1,
+            }
+        }
+    }).mount();
+
 });
