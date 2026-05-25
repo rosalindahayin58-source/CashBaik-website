@@ -726,7 +726,8 @@ body{
     }
 }
 
-@media(max-width:480px){
+.hero-content h1{
+    font: size 32px;
 
     .hero{
         padding:70px 5%;
@@ -747,4 +748,40 @@ body{
     .hero-content h1{
         font-size:44px;
     }
+}
+
+/* FIX OVERFLOW MOBILE */
+@media(max-width:768px){
+
+    .hero-container,
+    .cta-buttons,
+    .hero-buttons,
+    .merchant-grid,
+    .footer-grid{
+        width:100%;
+        overflow:hidden;
+    }
+
+    .action-box{
+        width:100%;
+        max-width:100%;
+    }
+
+    .input-group input{
+        min-width:0;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+    .splide{
+        overflow:hidden;
+    }
+
+    .splide__track{
+        overflow:hidden !important;
+    }
+
 }
