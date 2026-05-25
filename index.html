@@ -13,7 +13,42 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet"
+    href="'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
 </head>
+
+<!-- SPLIDE JS -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    new Splide('#caraKerjaSlider', {
+        perPage: 5,
+        gap: '20px',
+        arrows: false,
+        pagination: false,
+
+        breakpoints: {
+            1024: {
+                perPage: 3,
+            },
+
+            768: {
+                perPage: 1,
+                padding: '20px',
+            }
+        }
+    }).mount();
+
+});
+</script>
+
+<script src="assets/js/script.js"></script>
 
 <body>
 
@@ -111,7 +146,7 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="how-it-works" id="cara-kerja">
+    <section class="how-it-works">
 
         <div class="section-header">
             <h2>Bagaimana Cara Kerja CashBaik?</h2>
@@ -122,10 +157,16 @@
             </p>
         </div>
 
-        <div class="steps-container">
+        <div class="splide" id="caraKerjaSlider">
+            <div class="splide_track">
+                <div class="splide_list">
 
-            <div class="step-card">
-                <div class="step-icon">
+                </div>
+            </div>
+
+            <div class="splide_slide">
+                <div class="step-card">
+                    <div class="step-icon"
                     <i class="fa-solid fa-link" style="color: rgb(13, 85, 141);"></i>
                     <span>1</span></span>
                 </div>
@@ -135,7 +176,8 @@
                 </p>
             </div>
 
-            <div class="step-card">
+            <div class="splide_slide">
+                 <div class="step-card">
                 <div class="step-icon">
                     <i class="fa-solid fa-mobile-screen" style="color: rgb(13, 85, 141);"></i>
                     <span>2</span>
@@ -146,7 +188,8 @@
                 </p>
             </div>
 
-            <div class="step-card">
+            <div class="splide_slide">
+                <div class="step-card">
                 <div class="step-icon">
                     <i class="fa-solid fa-bag-shopping" style="color: rgb(13, 85, 141);"></i>
                     <span>3</span>
@@ -157,18 +200,20 @@
                 </p>
             </div>
 
-            <div class="step-card">
-                <div class="step-icon">
-                    <i class="fa-solid fa-credit-card" style="color: rgb(13, 85, 141);"></i>
-                    <span>4</span>
-                </div>
+            <div class="splide_slide">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-credit-card" style="color: rgb(13, 85, 141);"></i>
+                        <span>4</span>
+                    </div>
                 <h4>Selesaikan Pembayaran</h4>
                 <p>
                     Bayar pesanan seperti biasa di marketplace favoritmu.
                 </p>
             </div>
 
-            <div class="step-card">
+            <div class="splide_slide">
+                <div class="step-card">
                 <div class="step-icon">
                     <i class="fa-solid fa-wallet" style="color: rgb(13, 85, 141);"></i>
                     <span>5</span>
@@ -177,8 +222,8 @@
                 <p>
                     Setelah transaksi berhasil, CashBaik memverifikasi order kamu. Setelah terverifikasi saldo cashback akan masuk.
                 </p>
+                </div>
             </div>
-
         </div>
 
     </section>
