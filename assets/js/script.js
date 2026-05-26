@@ -1,117 +1,38 @@
-const hamburgerBtn = document.getElementById("hamburgerBtn");
-const navMenu = document.getElementById("navMenu");
+// ========================= HAMBURGER MENU =========================
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navMenu = document.getElementById('navMenu');
+const hamburgerIcon = hamburgerBtn ? hamburgerBtn.querySelector('i') : null;
 
-hamburgerBtn.addEventListener("click", () => {
-
-    navMenu.classList.toggle("active");
-
-    const icon = hamburgerBtn.querySelector("i");
-
-    if(navMenu.classList.contains("active")){
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-times");
-    }else{
-        icon.classList.remove("fa-times");
-        icon.classList.add("fa-bars");
-    }
-
-});
-
-/* CEK PROMO */
-
-const checkBtn = document.getElementById("checkBtn");
-const merchantInput = document.getElementById("merchantInput");
-
-checkBtn.addEventListener("click", () => {
-
-    const merchant = merchantInput.value.trim();
-
-    if(merchant === ""){
-        alert("Silakan masukkan nama merchant terlebih dahulu");
-    }else{
-        window.open("https://cashbaik.com", "_blank");
-    }
-
-});
-
-/* TUTUP MENU MOBILE */
-
-document.querySelectorAll(".nav-links a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        navMenu.classList.remove("active");
-
-        const icon = hamburgerBtn.querySelector("i");
-
-        icon.classList.remove("fa-times");
-        icon.classList.add("fa-bars");
-
-    });
-
-});
-
-/* ACTIVE NAVBAR SAAT SCROLL */
-
-const sections = document.querySelectorAll("section, footer");
-const navLinks = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-
-    let current = "";
-
-    sections.forEach(section => {
-
-        const sectionTop = section.offsetTop - 120;
-        const sectionHeight = section.clientHeight;
-
-        if(window.scrollY >= sectionTop){
-            current = section.getAttribute("id");
+if (hamburgerBtn && navMenu) {
+    hamburgerBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        navMenu.classList.toggle('active');
+        // Toggle icon between bars and X
+        if (hamburgerIcon) {
+            hamburgerIcon.classList.toggle('fa-bars');
+            hamburgerIcon.classList.toggle('fa-times');
         }
-
     });
 
-    navLinks.forEach(link => {
-
-        link.classList.remove("active");
-
-        if(link.getAttribute("href") === `#${current}`){
-            link.classList.add("active");
-        }
-
+    // Close menu when a nav link is clicked
+    navMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+            navMenu.classList.remove('active');
+            if (hamburgerIcon) {
+                hamburgerIcon.classList.add('fa-bars');
+                hamburgerIcon.classList.remove('fa-times');
+            }
+        });
     });
 
-
-});
-
-/* SPLIDE SLIDER */
-
-document.addEventListener('DOMContentLoaded', function () {
-
-    new Splide('#caraKerjaSlider', {
-        type       : 'slide',
-        perPage    : 5,
-        gap        : '20px',
-        pagination : false,
-        arrows     : false,
-        drag       : true,
-
-        breakpoints: {
-            1024: {
-                perPage: 3,
-            },
-
-            768: {
-                perPage: 1,
-                gap: '16px',
-                padding:'1rem',
-            },
-
-            480:{
-                perPage:1,
-                padding:'0.5rem',
+    // Close menu when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!navMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+            navMenu.classList.remove('active');
+            if (hamburgerIcon) {
+                hamburgerIcon.classList.add('fa-bars');
+                hamburgerIcon.classList.remove('fa-times');
             }
         }
-    }).mount();
-
-});
+    });
+}
