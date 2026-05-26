@@ -14,45 +14,11 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <!-- Splide CSS -->
     <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
 </head>
-
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-    new Splide('#caraKerjaSlider', {
-        type:'slide',
-        perPage: 5,
-        gap: '20px',
-        arrows: false,
-        pagination: false,
-
-        breakpoints: {
-            1024: {
-                perPage: 3,
-            },
-
-            768: {
-                perPage: 1,
-                gap: '16px',
-                padding: '1rem',
-            },
-
-             480: {
-                perPage: 1,
-                padding: '0.8rem',
-            }
-        }
-    }).mount();
-
-    });
-    </script>
-
-    <script src="assets/js/script.js"></script>
 
 <body>
 
@@ -149,183 +115,190 @@
 
     </section>
 
-   <!-- HOW IT WORKS -->
-<section class="how-it-works" id="cara-kerja">
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works" id="cara-kerja">
 
-    <div class="section-header">
-        <h2>Bagaimana Cara Kerja CashBaik?</h2>
+        <div class="section-header">
+            <h2>Bagaimana Cara Kerja CashBaik?</h2>
 
-        <p>
-            Belanja seperti biasa dan dapatkan cashback otomatis
-            dari setiap transaksi marketplace favoritmu.
-        </p>
-    </div>
-
-    <div class="splide" id="caraKerjaSlider">
-        <div class="splide__track">
-            <ul class="splide__list">
-
-                <!-- CARD 1 -->
-                <li class="splide__slide">
-                    <div class="step-card">
-                        <div class="step-icon">
-                            <i class="fa-solid fa-link" style="color: rgb(13, 85, 141);"></i>
-                            <span>1</span>
-                        </div>
-
-                        <h4>Salin Link Produk dari Marketplace favoritmu.</h4>
-
-                        <p>
-                            Salin link produk yang ingin Anda beli dari berbagai marketplace seperti Tokopedia, Shopee, Lazada, Bukalapak, Blibli, JD.ID, TikTok Shop, dan lainnya.
-                        </p>
-                    </div>
-                </li>
-
-                <!-- CARD 2 -->
-                <li class="splide__slide">
-                    <div class="step-card">
-                        <div class="step-icon">
-                            <i class="fa-solid fa-mobile-screen" style="color: rgb(13, 85, 141);"></i>
-                            <span>2</span>
-                        </div>
-
-                        <h4>Buka CashBaik</h4>
-
-                        <p>
-                            CashBaik otomatis mendeteksi link dari clipboard dan membawa kamu ke halaman detail produk.
-                        </p>
-                    </div>
-                </li>
-
-                <!-- CARD 3 -->
-                <li class="splide__slide">
-                    <div class="step-card">
-                        <div class="step-icon">
-                            <i class="fa-solid fa-bag-shopping" style="color: rgb(13, 85, 141);"></i>
-                            <span>3</span>
-                        </div>
-
-                        <h4>Tekan "Beli di Marketplace"</h4>
-
-                        <p>
-                            Kamu akan diarahkan langsung ke aplikasi marketplace.
-                        </p>
-                    </div>
-                </li>
-
-                <!-- CARD 4 -->
-                <li class="splide__slide">
-                    <div class="step-card">
-                        <div class="step-icon">
-                            <i class="fa-solid fa-credit-card" style="color: rgb(13, 85, 141);"></i>
-                            <span>4</span>
-                        </div>
-
-                        <h4>Selesaikan Pembayaran</h4>
-
-                        <p>
-                            Bayar pesanan seperti biasa di marketplace favoritmu.
-                        </p>
-                    </div>
-                </li>
-
-                <!-- CARD 5 -->
-                <li class="splide__slide">
-                    <div class="step-card">
-                        <div class="step-icon">
-                            <i class="fa-solid fa-wallet" style="color: rgb(13, 85, 141);"></i>
-                            <span>5</span>
-                        </div>
-
-                        <h4>Cashback diverifikasi</h4>
-
-                        <p>
-                            Setelah transaksi berhasil, cashback akan masuk ke akun kamu.
-                        </p>
-                    </div>
-                </li>
-
-            </ul>
+            <p>
+                Belanja seperti biasa dan dapatkan cashback otomatis
+                dari setiap transaksi marketplace favoritmu.
+            </p>
         </div>
-    </div>
 
-</section>
+        <div class="splide" id="caraKerjaSlider">
+            <div class="splide__track">
+                <ul class="splide__list">
+
+                    <!-- CARD 1 -->
+                    <li class="splide__slide">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fa-solid fa-link" style="color: rgb(13, 85, 141);"></i>
+                                <span>1</span>
+                            </div>
+
+                            <h4>Salin Link Produk dari Marketplace favoritmu.</h4>
+
+                            <p>
+                                Salin link produk yang ingin Anda beli dari berbagai marketplace seperti Tokopedia, Shopee, Lazada, Bukalapak, Blibli, JD.ID, TikTok Shop, dan lainnya.
+                            </p>
+                        </div>
+                    </li>
+
+                    <!-- CARD 2 -->
+                    <li class="splide__slide">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fa-solid fa-mobile-screen" style="color: rgb(13, 85, 141);"></i>
+                                <span>2</span>
+                            </div>
+
+                            <h4>Buka CashBaik</h4>
+
+                            <p>
+                                CashBaik otomatis mendeteksi link dari clipboard dan membawa kamu ke halaman detail produk.
+                            </p>
+                        </div>
+                    </li>
+
+                    <!-- CARD 3 -->
+                    <li class="splide__slide">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fa-solid fa-bag-shopping" style="color: rgb(13, 85, 141);"></i>
+                                <span>3</span>
+                            </div>
+
+                            <h4>Tekan "Beli di Marketplace"</h4>
+
+                            <p>
+                                Kamu akan diarahkan langsung ke aplikasi marketplace.
+                            </p>
+                        </div>
+                    </li>
+
+                    <!-- CARD 4 -->
+                    <li class="splide__slide">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fa-solid fa-credit-card" style="color: rgb(13, 85, 141);"></i>
+                                <span>4</span>
+                            </div>
+
+                            <h4>Selesaikan Pembayaran</h4>
+
+                            <p>
+                                Bayar pesanan seperti biasa di marketplace favoritmu.
+                            </p>
+                        </div>
+                    </li>
+
+                    <!-- CARD 5 -->
+                    <li class="splide__slide">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fa-solid fa-wallet" style="color: rgb(13, 85, 141);"></i>
+                                <span>5</span>
+                            </div>
+
+                            <h4>Cashback diverifikasi</h4>
+
+                            <p>
+                                Setelah transaksi berhasil, cashback akan masuk ke akun kamu.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </section>
 
     <!-- MERCHANT -->
     <section class="merchant-section" id="merchant">
 
-        <div class="section-title">
+        <div class="section-title section-header">
             <h2>Merchant Populer</h2>
             <p>
                 Dapatkan Cashback dari merchant favoritmu
             </p>
         </div>
 
-        <div class="merchant-grid">
+        <!-- Desktop: normal grid (hidden on mobile via CSS) -->
+        <div class="merchant-grid merchant-grid-desktop">
 
             <div class="merchant-card">
-
                 <div class="merchant-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Shopee.svg"
-                        alt="Shopee">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Shopee.svg" alt="Shopee">
                 </div>
-
                 <h3>Shopee</h3>
-
-                <p>
-                    Cashback hingga 10% untuk pengguna baru minggu ini.
-                </p>
-
-                <a href="https://cashbaik.com"
-                    target="_blank"
-                    class="merchant-btn">
-                    Lihat Promo
-                </a>
-
+                <p>Cashback hingga 10% untuk pengguna baru minggu ini.</p>
+                <a href="https://cashbaik.com" target="_blank" class="merchant-btn">Lihat Promo</a>
             </div>
 
             <div class="merchant-card">
-
                 <div class="merchant-icon">
-                    <img src="data:image/png;base64,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"
-                        alt="Tokopedia">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAACGCAMAAAARpzrEAAABIFBMVEX///9gu1VBQUFCtUlPnU6ExWfn5uY/O0A3NjfZ2dlBP0E0NDRhvlabm5u5ublCSEIvLzBYm1A6s0JOlU0zsTtQYUnL6s3Q7NI8PDzq9+ui2aX6/fr99q9JYUbz+vQvsDdvxXVkwmqAy4P/yWmv3rLv7+9FV0Q/OEDY79mEhIT/0HN5eXlFU0RQok/g8uFWvVxbW1t6enpLS0qEzYje3t5gYGBLakhDS0Jcv2KY1Jq8477Ly8tdr1NMhkufn56Z1Zxra2utrq1KdUhUjk1Mb0jB5sOMjowiIyPAw8BNh0tNdUlQf0tMulMvMDhcWU6VkHG4s4bWzZPVtG7HomCahFpsYk7x6aaLd1Nih1Ttvmhyp119t2KIzWlihVTj3J57blUwVSI/AAASh0lEQVR4nO2diX/ixhXHQbKRkDBgWQsChcMEGQj34QPjtcHYxLug2yRtmrTZtv//f9F5T9foALw1trvO/D57AHoS0nce3rwZzQyRCBMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTE9P/n8iRCBMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMT0/+fyJEIExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExPT/5/IkQgTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTE9P/n8iRCBMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMT0/+fyJEIExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMT" alt="Tokopedia">
                 </div>
-
                 <h3>Tokopedia</h3>
-
-                <p>
-                    Flash sale dan cashback tambahan setiap hari.
-                </p>
-
-                <a href="https://cashbaik.com"
-                    target="_blank"
-                    class="merchant-btn">
-                    Lihat Promo
-                </a>
-
+                <p>Flash sale dan cashback tambahan setiap hari.</p>
+                <a href="https://cashbaik.com" target="_blank" class="merchant-btn">Lihat Promo</a>
             </div>
 
             <div class="merchant-card">
-
                 <div class="merchant-icon">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAACClBMVEX///8RIoMAAIMAAIIVJYfl5/FDack+YsIVKIntZgBSeNNCZ8dHb89FbM05W7tAZcYtLZnzdAAaLo/V1esZGZDscgBXV644WbruUhQcMZIODop9fcH3lAD5nAD2kAD2jAD6L5Lzewi6v9uoqNT8Hbz7IbP0hQD/eQD0dBX5Mor6K5r0bSD1Ziz5NYH/cQBMWaO2ttxOTqpgYLP8F8r4PXH4OHr3RGX83sT7JKv7pAD7J6P9FNL1Xzj3S1nJ1PD/ugDmeRH2WEP2UU7xYwD0kkIoQ6PuVwDyAF7wFkiMjMg6OqBra7jz8/l8md9pitlvh9YsW9EaVOMda8EyW8iQfW5lapYfZ8F9Rb6KP8EWbbsiU9WDeHiZdmMVVOG9MLTVH8phTMMRSuLRlizdhB+MQ66uKdCoi1GpclDWMZ3/AOGCOM7wrQ51YIGlQZr/APPQFecMaKlEZ6rIpjL/wgDFZkN3TJ6iJ+LjmBf/0gC1W2B6VYxkU5uHTpLTQXu7G8oYWq33pD7849P1Ry/3bFn4cm78z8T6jqH9yNz/4ub7oqXvADT7r8v3uob5zafvQwv+3+z2PpP4YqP5jLr0nmDtABf0TXT2pnrwfj/3dJybG6wAQpWvaDj3fZoAK7NZTHK/EqCOWk1pJZc6P4PDZiegGpBuTGDXE4GDIIVkJIGcHW/PGFmcUD56H2+sGVoLbEPKAAAG+ElEQVR4nO2YjVtTVRjAj3de3SLwjl03toHiBhtDh7tD4kuBwu3u41YgSYFpWlnRB2nfZWlaCk1FBT8Qw+zLzOp/7D3n3LsNBjwG1g4970/hcs85w/d33/O+5z4SgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAI0PPEani23GGX0vPkMlRWVtKvAsWTz5U77FJ6FoWbj3qp0TwiZqRy04ohL2YTQ0SRTaugQmiRikdni4g1slysK1EhosiWzSvGDGwuoeL5coddSk9pmI+A8CIDg6NLR35gZMGtiFurKLyhY7tfODg4wG+qihg+8OJLwyOFISEzkg+uanD0UF1n7csDh6sW4Nk87DnS0PrK0ZEDHmtMZJHRYwdf7ayr3Vb7GiSlSKNqePj1jsaG1tbu454Tw1zFI+LW4vEOHfO80dtZByLbt4feHBr0VHk4VcPaW81cZGzs7ZETfFTEjLBoDw8eeod6UJFQKNT37uioJfJepL6Li3SPjb9/9MQZkUVGT37wYW+nKQIm4fBHu0cHhoaGPB9Ho/XNeZGx8fFPqs6IKzI0+uln4FEQ2dHU0v/5F6dOffnVnrbIQpHx4yPiigxUOUOdvb3FIjt31Zx7+pl9T7VFi0XGx8e6T4ucEU9f2Bmq6+wsFtlLPfYUi4yNdTc0CC+yw0lVVhDp7m5t7IALFUmILAImzlBtXW1ox9IiDR2sC1ORhJAiiURiKEFFuMq2bdtKRRobGru4D91aCWFFBhJmRpxOh6OdfO1cJNLR0RyJNHcxkVYmki132KVQkUyC1Qij/6wlcu6cJRLRdThNmsUWCZgiTkuknezvB5Gamm++3ZeCY+RqpE2PRiILRU6WO+xSlhJJOpzJXedh8oIxoU/QVcZkPasRqPbTc+snI0lHv4OQye8mCZnIXZiYuAg/sObVse5EkpfI5anruQtkIpXSc/oVcpW+cnWtIxGHmZGzpCm5K5ciV1J6Cjyu6fVWkYgsopSKENLkqElRkVRqgkzrUbPaGxuOrB+RvqmaqXYyMzV1/QZsrdxFMp3T9Ui9WSRii2wtFrl889KtW4TM7L1Bi32WTEaj167RBsyKBES8XhFFvIDSF7JEkmfpaPvUTXqZJJM5c12+2m/Peb1CZoSJJO6Ew+Yryv6ZmZmb+5M1ty6dn019P5uaBaanp60j8XYiIbBIYn7+bl+4hXo4k0BN0uFIJqdyqVxOT1F0Wu2Qkh8UurG83t3lDrsUJgLMK/fCYUcxW2tMB6Atyt5Sfpyb46sFFvEq8z/9HG5ZXiQa+cU7Zy0WWQSSMv9rU3gZEV2/ryQKS0UUqS6Ep8x77xSSUiyi67/BfLWFmCJFeNX5uztb+heIMJP79iINQHQRAIq+pWVBRuDvg4UaYorYq+3FVNOiZypWRlK/Vy/SEFSkBCh6B+wvLpJ7+KC6umTJ+hCxb5zf+EdLCxXJpf5cYn7diNjtKj1UkrncX3bFvhHMFiOiSEmQFEiKem/vwwfKkrOCimxYRsUHyVhmcoOIIhtWA4r8e6CIaKCIaASWbrArI6KIIa8Go9xhIwiC/ANkl1zuECygg67hwz5JeXyhrA1V8rlW/WFZsqmPMZY14bNJaxARKiMoIrBIzB/3B4gRDLroNwvWDQIwFSMkGAywla50PBskRDJF5HQ2mzZILBgsgwKnSMSVkWw2SfIHJSlLAlIeiN/Q2E/umCRl6NKsRJdmAgoXSbNZNaZIkgAisE9skg+K3wcylogN/sSIoYCgDcZhzg1LNRiV+K3CtPK3PgFEFOilQVkOqvCs/cSIUVxgkDGIG3zSshyDlFGRNFz8LjlAfUAkBpesS3ZRHwFEIBwfqwbZR0U4sMtUg7gkq0crTAQePq8FN6sRhW5Fil8SQSQuSWk+lJYskSA3gIE4H4AacZOYzWb2KpmKwKnoy/8yAUQy+ZPRZYn0sAJhjmY3MmiNFEQJLXaQ08xbt5giUP08SXHWuRimiJk7kuEiZr5gYRlFrPi1/GOPmSKKFaE/XzQuurWChRTQrgUVZJ2KSnlF+P8fpK3DDR4zi1vLxxuwWe+Gbioi52uffwaaA38EsUK1/PeASBr6bFA2ILw4tC05LrEE+K0HbbDcZCB0w8/bL3RjNUB4G1b4hW69mK28XcvGTr40a1E+TfNJTCQA31VFpQRZ/5U0typxEYMenRm3InERegJJijtDf035RKwD3G+9aEhKlp4LQesFhU3FfMzX5+evKC4aOp3hkRsZ/jSyahlfUbLuOMVN94Yrq6iKn8iaBknQ3CYanZL9GVXJykTTeMNKw63bReIa7wJBTVVhnV+LL/8vIQiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIMj/n78B4SfRwChaW9QAAAAASUVORK5CYII="
-                        alt="Lazada">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAACClBMVEX///8RIoMAAIMAAIIVJYfl5/FDack+YsIVKIntZgBSeNNCZ8dHb89FbM05W7tAZcYtLZnzdAAaLo/V1esZGZDscgBXV644WbruUhQcMZIODop9fcH3lAD5nAD2kAD2jAD6L5Lzewi6v9uoqNT8Hbz7IbP0hQD/eQD0dBX5Mor6K5r0bSD1Ziz5NYH/cQBMWaO2ttxOTqpgYLP8F8r4PXH4OHr3RGX83sT7JKv7pAD7J6P9FNL1Xzj3S1nJ1PD/ugDmeRH2WEP2UU7xYwD0kkIoQ6PuVwDyAF7wFkiMjMg6OqBra7jz8/l8md9pitlvh9YsW9EaVOMda8EyW8iQfW5lapYfZ8F9Rb6KP8EWbbsiU9WDeHiZdmMVVOG9CLTVH8phTMMRSuLRlizdhB+MQ66uKdCoi1GpclDWMZ3/AOGCOM7wrQ51YIGlQZr/APPQFecMaKlEZ6rIpjL/wgDFZkN3TJ6iJ+LjmBf/0gC1W2B6VYxkU5uHTpLTQXu7G8oYWq33pD7849P1Ry/3bFn4cm78z8T6jqH9yNz/4ary7A51YIGlQZr/APPQFecMaKlEZ6rIpjL/wgDFZkN3TJ6iJ+LjmBf/0gC1W2B6VYxkU5uHTpLTQXu7G8oYWq33pD7849P1Ry/3bFn4cm78z8T6jqH9yNz/4ary7A51YIGlQZr/APPQFecMaKlEZ6rIpjL/wgDFZkN3TJ6iJ+LjmBf" alt="Lazada">
                 </div>
-
                 <h3>Lazada</h3>
-
-                <p>
-                    Voucher diskon, gratis ongkir dan cashback harian.
-                </p>
-
-                <a href="https://cashbaik.com"
-                    target="_blank"
-                    class="merchant-btn">
-                    Lihat Promo
-                </a>
-
+                <p>Voucher diskon, gratis ongkir dan cashback harian.</p>
+                <a href="https://cashbaik.com" target="_blank" class="merchant-btn">Lihat Promo</a>
             </div>
 
+        </div>
+
+        <!-- Mobile: Splide slider (hidden on desktop via CSS) -->
+        <div class="splide merchant-splide" id="merchantSlider">
+            <div class="splide__track">
+                <ul class="splide__list">
+
+                    <li class="splide__slide">
+                        <div class="merchant-card">
+                            <div class="merchant-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Shopee.svg" alt="Shopee">
+                            </div>
+                            <h3>Shopee</h3>
+                            <p>Cashback hingga 10% untuk pengguna baru minggu ini.</p>
+                            <a href="https://cashbaik.com" target="_blank" class="merchant-btn">Lihat Promo</a>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="merchant-card">
+                            <div class="merchant-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAACGCAMAAAARpzrEAAABIFBMVEX///9gu1VBQUFCtUlPnU6ExWfn5uY/O0A3NjfZ2dlBP0E0NDRhvlabm5u5ublCSEIvLzBYm1A6s0JOlU0zsTtQYUnL6s3Q7NI8PDzq9+ui2aX6/fr99q9JYUbz+vQvsDdvxXVkwmqAy4P/yWmv3rLv7+9FV0Q/OEDY79mEhIT/0HN5eXlFU0RQok/g8uFWvVxbW1t6enpLS0qEzYje3t5gYGBLakhDS0Jcv2KY1Jq8477Ly8tdr1NMhkufn56Z1Zxra2utrq1KdUhUjk1Mb0jB5sOMjowiIyPAw8BNh0tNdUlQf0tMulMvMDhcWU6VkHG4s4bWzZPVtG7HomCahFpsYk7x6aaLd1Nih1Ttvmhyp119t2KIzWlihVTj3J57blUwVSI/AAASh0lEQVR4nO2diX/ixhXHQbKRkDBgWQsChcMEGQj34QPjtcHYxLug2yRtmrTZtv//f9F5T9foALw1trvO/D57AHoS0nce3rwZzQyRCBMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTE9P/n8iRCBMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMT0/+fyJEIExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExPT/5/IkQgTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTE9P/n8iRCBMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMT0/+fyJEIExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMT" alt="Tokopedia">
+                            </div>
+                            <h3>Tokopedia</h3>
+                            <p>Flash sale dan cashback tambahan setiap hari.</p>
+                            <a href="https://cashbaik.com" target="_blank" class="merchant-btn">Lihat Promo</a>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="merchant-card">
+                            <div class="merchant-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAACClBMVEX///8RIoMAAIMAAIIVJYfl5/FDack+YsIVKIntZgBSeNNCZ8dHb89FbM05W7tAZcYtLZnzdAAaLo/V1esZGZDscgBXV644WbruUhQcMZIODop9fcH3lAD5nAD2kAD2jAD6L5Lzewi6v9uoqNT8Hbz7IbP0hQD/eQD0dBX5Mor6K5r0bSD1Ziz5NYH/cQBMWaO2ttxOTqpgYLP8F8r4PXH4OHr3RGX83sT7JKv7pAD7J6P9FNL1Xzj3S1nJ1PD/ugDmeRH2WEP2UU7xYwD0kkIoQ6PuVwDyAF7wFkiMjMg6OqBra7jz8/l8md9pitlvh9YsW9EaVOMda8EyW8iQfW5lapYfZ8F9Rb6KP8EWbbsiU9WDeHiZdmMVVOG9CLTVH8phTMMRSuLRlizdhB+MQ66uKdCoi1GpclDWMZ3/AOGCOM7wrQ51YIGlQZr/APPQFecMaKlEZ6rIpjL/wgDFZkN3TJ6iJ+LjmBf/0gC1W2B6VYxkU5uHTpLTQXu7G8oYWq33pD7849P1Ry/3bFn4cm78z8T6jqH9yNz/4ary7A51YIGlQZr/APPQFecMaKlEZ6rIpjL/wgDFZkN3TJ6iJ+LjmBf/0gC1W2B6VYxkU5uHTpLTQXu7G8oYWq33pD7849P1Ry/3bFn4cm78z8T6jqH9yNz/4ary7A51YIGlQZr/APPQFecMaKlEZ6rIpjL/wgDFZkN3TJ6iJ+LjmBf" alt="Lazada">
+                            </div>
+                            <h3>Lazada</h3>
+                            <p>Voucher diskon, gratis ongkir dan cashback harian.</p>
+                            <a href="https://cashbaik.com" target="_blank" class="merchant-btn">Lihat Promo</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
         </div>
 
     </section>
@@ -423,12 +396,60 @@
 
         <div class="footer-bottom">
             <p>
-                © 2026 CashBaik. All Rights Reserved.
+                &copy; 2026 CashBaik. All Rights Reserved.
             </p>
         </div>
 
     </footer>
 
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        // ===== HOW IT WORKS SLIDER =====
+        new Splide('#caraKerjaSlider', {
+            type: 'slide',
+            perPage: 5,
+            gap: '20px',
+            arrows: false,
+            pagination: true,
+            drag: true,
+            breakpoints: {
+                1024: {
+                    perPage: 3,
+                    pagination: true,
+                },
+                768: {
+                    perPage: 1,
+                    gap: '16px',
+                    padding: '1rem',
+                    pagination: true,
+                },
+                480: {
+                    perPage: 1,
+                    padding: '0.8rem',
+                    pagination: true,
+                }
+            }
+        }).mount();
+
+        // ===== MERCHANT SLIDER (mobile only) =====
+        var merchantSplide = new Splide('#merchantSlider', {
+            type: 'loop',
+            perPage: 1,
+            gap: '20px',
+            arrows: true,
+            pagination: true,
+            drag: true,
+            padding: '1rem',
+        }).mount();
+
+    });
+    </script>
+
+    <!-- Hamburger & nav script -->
     <script src="assets/js/script.js"></script>
 
 </body>
