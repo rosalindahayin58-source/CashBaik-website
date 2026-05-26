@@ -6,18 +6,10 @@
     <title>CashBaik - Belanja Lebih Hemat</title>
 
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.jpg">
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Splide CSS -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 
 <body>
@@ -25,9 +17,7 @@
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">
-            <a href="#">
-                <img src="assets/images/logo.jpg" alt="CashBaik Logo">
-            </a>
+            <a href="#"><img src="assets/images/logo.jpg" alt="CashBaik Logo"></a>
         </div>
 
         <div class="nav-menu" id="navMenu">
@@ -37,11 +27,8 @@
                 <a href="#merchant">Merchant</a>
                 <a href="#footer">Kontak</a>
             </div>
-
             <div class="nav-right">
-                <a href="https://cashbaik.com" target="_blank" class="btn-register">
-                    Mulai Cashback
-                </a>
+                <a href="https://cashbaik.com" target="_blank" class="btn-register">Mulai Cashback</a>
             </div>
         </div>
 
@@ -52,140 +39,47 @@
 
     <!-- HERO -->
     <section class="hero" id="beranda">
-
         <div class="hero-container">
-
             <div class="hero-content">
-
                 <div class="trust-badge">
                     <i class="fas fa-users"></i>
                     Dipercaya 50.000+ Pengguna
                 </div>
-
-                <h1>
-                    Belanja Lebih Hemat
-                    <span>Bersama CashBaik</span>
-                </h1>
-
-                <p>
-                    Dapatkan cashback dari berbagai merchant favorit seperti Shopee,
-                    Tokopedia, Lazada dan marketplace populer lainnya.
-                </p>
-
+                <h1>Belanja Lebih Hemat <span>Bersama CashBaik</span></h1>
+                <p>Dapatkan cashback dari berbagai merchant favorit seperti Shopee, Tokopedia, Lazada dan marketplace populer lainnya.</p>
                 <div class="action-box">
-
                     <div class="input-group">
-                        <span class="search-icon">
-                            <i class="fas fa-search"></i>
-                        </span>
-
-                        <input type="text"
-                            id="merchantInput"
-                            placeholder="Cari merchant favorit..." />
+                        <span class="search-icon"><i class="fas fa-search"></i></span>
+                        <input type="text" id="merchantInput" placeholder="Cari merchant favorit..." />
                     </div>
-
-                    <button id="checkBtn">
-                        Cek Promo
-                    </button>
-
+                    <button id="checkBtn">Cek Promo</button>
                 </div>
-
                 <div class="hero-buttons">
-                    <a href="https://cashbaik.com"
-                        target="_blank"
-                        class="hero-btn primary-btn">
-                        Kunjungi Website
-                    </a>
-
-                    <a href="https://play.google.com/store/apps/details?id=com.cashbaik.app&pcampaignid=web_share"
-                        target="_blank"
-                        class="hero-btn secondary-btn">
-                        Download Aplikasi
-                    </a>
+                    <a href="https://cashbaik.com" target="_blank" class="hero-btn primary-btn">Kunjungi Website</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.cashbaik.app&pcampaignid=web_share" target="_blank" class="hero-btn secondary-btn">Download Aplikasi</a>
                 </div>
-
             </div>
-
             <div class="hero-image">
-                <img src="https://cdn-icons-png.flaticon.com/512/2331/2331941.png"
-                    alt="Cashback Illustration">
+                <img src="https://cdn-icons-png.flaticon.com/512/2331/2331941.png" alt="Cashback Illustration">
             </div>
-
         </div>
-
     </section>
 
-    <!-- HOW IT WORKS -->
+    <!-- HOW IT WORKS — single Splide, all breakpoints -->
     <section class="how-it-works" id="cara-kerja">
-
         <div class="section-header">
             <h2>Bagaimana Cara Kerja CashBaik?</h2>
-
-            <p>
-                Belanja seperti biasa dan dapatkan cashback otomatis
-                dari setiap transaksi marketplace favoritmu.
-            </p>
+            <p>Belanja seperti biasa dan dapatkan cashback otomatis dari setiap transaksi marketplace favoritmu.</p>
         </div>
 
-        <!-- Desktop: static 5-column grid (same pattern as merchant grid) -->
-        <div class="step-grid step-grid-desktop">
-
-            <div class="step-card">
-                <div class="step-icon">
-                    <i class="fa-solid fa-link" style="color: rgb(13, 85, 141);"></i>
-                    <span>1</span>
-                </div>
-                <h4>Salin Link Produk dari Marketplace favoritmu.</h4>
-                <p>Salin link produk yang ingin Anda beli dari berbagai marketplace seperti Tokopedia, Shopee, Lazada, Bukalapak, Blibli, JD.ID, TikTok Shop, dan lainnya.</p>
-            </div>
-
-            <div class="step-card">
-                <div class="step-icon">
-                    <i class="fa-solid fa-mobile-screen" style="color: rgb(13, 85, 141);"></i>
-                    <span>2</span>
-                </div>
-                <h4>Buka CashBaik</h4>
-                <p>CashBaik otomatis mendeteksi link dari clipboard dan membawa kamu ke halaman detail produk.</p>
-            </div>
-
-            <div class="step-card">
-                <div class="step-icon">
-                    <i class="fa-solid fa-bag-shopping" style="color: rgb(13, 85, 141);"></i>
-                    <span>3</span>
-                </div>
-                <h4>Tekan "Beli di Marketplace"</h4>
-                <p>Kamu akan diarahkan langsung ke aplikasi marketplace.</p>
-            </div>
-
-            <div class="step-card">
-                <div class="step-icon">
-                    <i class="fa-solid fa-credit-card" style="color: rgb(13, 85, 141);"></i>
-                    <span>4</span>
-                </div>
-                <h4>Selesaikan Pembayaran</h4>
-                <p>Bayar pesanan seperti biasa di marketplace favoritmu.</p>
-            </div>
-
-            <div class="step-card">
-                <div class="step-icon">
-                    <i class="fa-solid fa-wallet" style="color: rgb(13, 85, 141);"></i>
-                    <span>5</span>
-                </div>
-                <h4>Cashback diverifikasi</h4>
-                <p>Setelah transaksi berhasil, cashback akan masuk ke akun kamu.</p>
-            </div>
-
-        </div>
-
-        <!-- Mobile: Splide swiper (hidden on desktop) -->
-        <div class="splide step-splide" id="caraKerjaSlider">
+        <div class="splide" id="caraKerjaSlider">
             <div class="splide__track">
                 <ul class="splide__list">
 
                     <li class="splide__slide">
                         <div class="step-card">
                             <div class="step-icon">
-                                <i class="fa-solid fa-link" style="color: rgb(13, 85, 141);"></i>
+                                <i class="fa-solid fa-link" style="color:rgb(13,85,141)"></i>
                                 <span>1</span>
                             </div>
                             <h4>Salin Link Produk dari Marketplace favoritmu.</h4>
@@ -196,7 +90,7 @@
                     <li class="splide__slide">
                         <div class="step-card">
                             <div class="step-icon">
-                                <i class="fa-solid fa-mobile-screen" style="color: rgb(13, 85, 141);"></i>
+                                <i class="fa-solid fa-mobile-screen" style="color:rgb(13,85,141)"></i>
                                 <span>2</span>
                             </div>
                             <h4>Buka CashBaik</h4>
@@ -207,7 +101,7 @@
                     <li class="splide__slide">
                         <div class="step-card">
                             <div class="step-icon">
-                                <i class="fa-solid fa-bag-shopping" style="color: rgb(13, 85, 141);"></i>
+                                <i class="fa-solid fa-bag-shopping" style="color:rgb(13,85,141)"></i>
                                 <span>3</span>
                             </div>
                             <h4>Tekan "Beli di Marketplace"</h4>
@@ -218,7 +112,7 @@
                     <li class="splide__slide">
                         <div class="step-card">
                             <div class="step-icon">
-                                <i class="fa-solid fa-credit-card" style="color: rgb(13, 85, 141);"></i>
+                                <i class="fa-solid fa-credit-card" style="color:rgb(13,85,141)"></i>
                                 <span>4</span>
                             </div>
                             <h4>Selesaikan Pembayaran</h4>
@@ -229,7 +123,7 @@
                     <li class="splide__slide">
                         <div class="step-card">
                             <div class="step-icon">
-                                <i class="fa-solid fa-wallet" style="color: rgb(13, 85, 141);"></i>
+                                <i class="fa-solid fa-wallet" style="color:rgb(13,85,141)"></i>
                                 <span>5</span>
                             </div>
                             <h4>Cashback diverifikasi</h4>
@@ -240,53 +134,16 @@
                 </ul>
             </div>
         </div>
-
     </section>
 
-    <!-- MERCHANT -->
+    <!-- MERCHANT — single Splide, all breakpoints -->
     <section class="merchant-section" id="merchant">
-
-        <div class="section-title section-header">
+        <div class="section-header">
             <h2>Merchant Populer</h2>
-            <p>
-                Dapatkan Cashback dari merchant favoritmu
-            </p>
+            <p>Dapatkan Cashback dari merchant favoritmu</p>
         </div>
 
-        <!-- Desktop: normal grid (hidden on mobile via CSS) -->
-        <div class="merchant-grid merchant-grid-desktop">
-
-            <div class="merchant-card">
-                <div class="merchant-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Shopee.svg" alt="Shopee">
-                </div>
-                <h3>Shopee</h3>
-                <p>Cashback hingga 10% untuk pengguna baru minggu ini.</p>
-                <a href="https://cashbaik.com" target="_blank" class="merchant-btn">Lihat Promo</a>
-            </div>
-
-            <div class="merchant-card">
-                <div class="merchant-icon">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAACGCAMAAAARpzrEAAABIFBMVEX///9gu1VBQUFCtUlPnU6ExWfn5uY/O0A3NjfZ2dlBP0E0NDRhvlabm5u5ublCSEIvLzBYm1A6s0JOlU0zsTtQYUnL6s3Q7NI8PDzq9+ui2aX6/fr99q9JYUbz+vQvsDdvxXVkwmqAy4P/yWmv3rLv7+9FV0Q/OEDY79mEhIT/0HN5eXlFU0RQok/g8uFWvVxbW1t6enpLS0qEzYje3t5gYGBLakhDS0Jcv2KY1Jq8477Ly8tdr1NMhkufn56Z1Zxra2utrq1KdUhUjk1Mb0jB5sOMjowiIyPAw8BNh0tNdUlQf0tMulMvMDhcWU6VkHG4s4bWzZPVtG7HomCahFpsYk7x6aaLd1Nih1Ttvmhyp119t2KIzWlihVTj3J57blUwVSI/AAASh0lEQVR4nO2diX/ixhXHQbKRkDBgWQsChcMEGQj34QPjtcHYxLug2yRtmrTZtv//f9F5T9foALw1trvO/D57AHoS0nce3rwZzQyRCBMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTE9P/n8iRCBMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMT0/+fyJEIExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExPT/5/IkQgTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTE9P/n8iRCBMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMT0/+fyJEIExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMT" alt="Tokopedia">
-                </div>
-                <h3>Tokopedia</h3>
-                <p>Flash sale dan cashback tambahan setiap hari.</p>
-                <a href="https://cashbaik.com" target="_blank" class="merchant-btn">Lihat Promo</a>
-            </div>
-
-            <div class="merchant-card">
-                <div class="merchant-icon">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAACClBMVEX///8RIoMAAIMAAIIVJYfl5/FDack+YsIVKIntZgBSeNNCZ8dHb89FbM05W7tAZcYtLZnzdAAaLo/V1esZGZDscgBXV644WbruUhQcMZIODop9fcH3lAD5nAD2kAD2jAD6L5Lzewi6v9uoqNT8Hbz7IbP0hQD/eQD0dBX5Mor6K5r0bSD1Ziz5NYH/cQBMWaO2ttxOTqpgYLP8F8r4PXH4OHr3RGX83sT7JKv7pAD7J6P9FNL1Xzj3S1nJ1PD/ugDmeRH2WEP2UU7xYwD0kkIoQ6PuVwDyAF7wFkiMjMg6OqBra7jz8/l8md9pitlvh9YsW9EaVOMda8EyW8iQfW5lapYfZ8F9Rb6KP8EWbbsiU9WDeHiZdmMVVOG9CLTVH8phTMMRSuLRlizdhB+MQ66uKdCoi1GpclDWMZ3/AOGCOM7wrQ51YIGlQZr/APPQFecMaKlEZ6rIpjL/wgDFZkN3TJ6iJ+LjmBf/0gC1W2B6VYxkU5uHTpLTQXu7G8oYWq33pD7849P1Ry/3bFn4cm78z8T6jqH9yNz/4ary7A51YIGlQZr/APPQFecMaKlEZ6rIpjL/wgDFZkN3TJ6iJ+LjmBf/0gC1W2B6VYxkU5uHTpLTQXu7G8oYWq33pD7849P1Ry/3bFn4cm78z8T6jqH9yNz/4ary7A51YIGlQZr/APPQFecMaKlEZ6rIpjL/wgDFZkN3TJ6iJ+LjmBf" alt="Lazada">
-                </div>
-                <h3>Lazada</h3>
-                <p>Voucher diskon, gratis ongkir dan cashback harian.</p>
-                <a href="https://cashbaik.com" target="_blank" class="merchant-btn">Lihat Promo</a>
-            </div>
-
-        </div>
-
-        <!-- Mobile: Splide slider (hidden on desktop via CSS) -->
-        <div class="splide merchant-splide" id="merchantSlider">
+        <div class="splide" id="merchantSlider">
             <div class="splide__track">
                 <ul class="splide__list">
 
@@ -326,106 +183,49 @@
                 </ul>
             </div>
         </div>
-
     </section>
 
     <!-- CTA -->
     <section class="cta-section">
-
-        <h2>
-            Mulai Hemat Bersama CashBaik
-        </h2>
-
-        <p>
-            Belanja lebih menguntungkan dengan cashback otomatis
-            dari setiap transaksi online favoritmu.
-        </p>
-
+        <h2>Mulai Hemat Bersama CashBaik</h2>
+        <p>Belanja lebih menguntungkan dengan cashback otomatis dari setiap transaksi online favoritmu.</p>
         <div class="cta-buttons">
-
-            <a href="https://cashbaik.com"
-                target="_blank"
-                class="cta-button primary-cta">
-                <i class="fas fa-globe"></i>
-                Kunjungi Website
+            <a href="https://cashbaik.com" target="_blank" class="cta-button primary-cta">
+                <i class="fas fa-globe"></i> Kunjungi Website
             </a>
-
-            <a href="https://cashbaik.com"
-                target="_blank"
-                class="cta-button secondary-cta">
-                <i class="fas fa-download"></i>
-                Download Sekarang
+            <a href="https://cashbaik.com" target="_blank" class="cta-button secondary-cta">
+                <i class="fas fa-download"></i> Download Sekarang
             </a>
-
         </div>
-
     </section>
 
     <!-- FOOTER -->
     <footer class="footer" id="footer">
-
         <div class="footer-grid">
-
             <div class="footer-col footer-col-brand">
-
-                <img src="assets/images/logo.jpg"
-                    class="footer-logo"
-                    alt="CashBaik Logo">
-
-                <p>
-                    Solusi belanja hemat terpercaya di Indonesia.
-                </p>
-
+                <img src="assets/images/logo.jpg" class="footer-logo" alt="CashBaik Logo">
+                <p>Solusi belanja hemat terpercaya di Indonesia.</p>
             </div>
-
             <div class="footer-col">
-
                 <h4>Navigasi</h4>
-
                 <a href="#beranda">Beranda</a>
                 <a href="#cara-kerja">Cara Kerja</a>
                 <a href="#merchant">Merchant</a>
-
             </div>
-
             <div class="footer-col">
-
                 <h4>Bantuan</h4>
-
-                <a href="https://cashbaik.com" target="_blank">
-                    Website Resmi
-                </a>
-
-                <a href="https://cashbaik.com" target="_blank">
-                    FAQ
-                </a>
-
+                <a href="https://cashbaik.com" target="_blank">Website Resmi</a>
+                <a href="https://cashbaik.com" target="_blank">FAQ</a>
             </div>
-
             <div class="footer-col">
-
                 <h4>Hubungi Kami</h4>
-
-                <p>
-                    <i class="fas fa-envelope"></i>
-                    bantuan@cashbaik.com
-                </p>
-
-                <p>
-                    <i class="fas fa-phone"></i>
-                    +62 812-3456-789
-                </p>
-
+                <p><i class="fas fa-envelope"></i> bantuan@cashbaik.com</p>
+                <p><i class="fas fa-phone"></i> +62 812-3456-789</p>
             </div>
-
         </div>
-
         <div class="footer-bottom">
-            <p>
-                &copy; 2026 CashBaik. All Rights Reserved.
-            </p>
+            <p>&copy; 2026 CashBaik. All Rights Reserved.</p>
         </div>
-
     </footer>
 
     <!-- Splide JS -->
@@ -434,32 +234,42 @@
     <script>
     document.addEventListener('DOMContentLoaded', function () {
 
-        // ===== HOW IT WORKS SLIDER (mobile only) =====
+        // HOW IT WORKS — 5 cards desktop, 3 tablet, 1 mobile
         new Splide('#caraKerjaSlider', {
-            type: 'loop',
-            perPage: 1,
-            gap: '16px',
-            arrows: true,
-            pagination: true,
-            drag: true,
-            padding: '1rem',
+            type       : 'loop',
+            perPage    : 5,
+            perMove    : 1,
+            gap        : '20px',
+            arrows     : true,
+            pagination : true,
+            drag       : true,
+            breakpoints: {
+                1200: { perPage: 4 },
+                1024: { perPage: 3 },
+                768 : { perPage: 2, gap: '16px' },
+                600 : { perPage: 1, gap: '14px', padding: '1rem' },
+            }
         }).mount();
 
-        // ===== MERCHANT SLIDER (mobile only) =====
-        var merchantSplide = new Splide('#merchantSlider', {
-            type: 'loop',
-            perPage: 1,
-            gap: '20px',
-            arrows: true,
-            pagination: true,
-            drag: true,
-            padding: '1rem',
+        // MERCHANT — 3 cards desktop, 2 tablet, 1 mobile
+        new Splide('#merchantSlider', {
+            type       : 'loop',
+            perPage    : 3,
+            perMove    : 1,
+            gap        : '30px',
+            arrows     : true,
+            pagination : true,
+            drag       : true,
+            breakpoints: {
+                900 : { perPage: 2, gap: '20px' },
+                600 : { perPage: 1, gap: '16px', padding: '1rem' },
+            }
         }).mount();
 
     });
     </script>
 
-    <!-- Hamburger & nav script -->
+    <!-- Hamburger -->
     <script src="assets/js/script.js"></script>
 
 </body>
