@@ -548,26 +548,41 @@ img{
     }
 
     .merchant-grid{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-        gap:20px;
+        grid-template-columns:repeat(2, 1fr);
+        gap:16px;
     }
 
     .merchant-card{
         width:100%;
         min-width:0;
-        padding:30px 20px;
+        padding:24px 20px;
+        border-radius:20px;
     }
 
     .merchant-icon{
-        width:120px;
-        height:120px;
-    }
-
-    .merchant-icon img{
         width:100px;
         height:100px;
     }
 
+    .merchant-icon img{
+        width:80px;
+        height:80px;
+    }
+
+.merchant-card h3{
+    font-size:18px;
+    margin:15px  0  8px;
+}
+
+.merchant-card p{
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.mechant-btn{
+    padding:10px;
+    font-size:14px;
+}
     .footer-grid{
         grid-template-columns:1fr 1fr;
     }
@@ -577,7 +592,7 @@ img{
    MOBILE
 ========================= */
 
-@media(max-width:768px){
+@media(max-width:600px){
 
     .navbar{
         position:relative;
