@@ -25,6 +25,7 @@
     document.addEventListener('DOMContentLoaded', function () {
 
     new Splide('#caraKerjaSlider', {
+        type:'slide',
         perPage: 5,
         gap: '20px',
         arrows: false,
@@ -37,7 +38,13 @@
 
             768: {
                 perPage: 1,
-                padding: '20px',
+                gap: '16px',
+                padding: '1rem',
+            },
+
+             480: {
+                perPage: 1,
+                padding: '0.8rem',
             }
         }
     }).mount();
