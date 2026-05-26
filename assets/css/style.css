@@ -16,10 +16,7 @@
     --bg:#f8fafc;
 }
 
-html,
-body{
-    overflow-x:hidden;
-}
+html,body{ overflow-x:hidden; }
 
 body{
     background:var(--white);
@@ -28,16 +25,11 @@ body{
     font-size:15px;
 }
 
-img{
-    max-width:100%;
-    height:auto;
-    display:block;
-}
+img{ max-width:100%; height:auto; display:block; }
 
 /* =========================
    NAVBAR
 ========================= */
-
 .navbar{
     width:100%;
     padding:12px 8%;
@@ -51,9 +43,7 @@ img{
     box-shadow:0 4px 20px rgba(0,0,0,.05);
 }
 
-.logo img{
-    height:25px;
-}
+.logo img{ height:25px; }
 
 .nav-menu{
     display:flex;
@@ -61,10 +51,7 @@ img{
     gap:40px;
 }
 
-.nav-links{
-    display:flex;
-    gap:25px;
-}
+.nav-links{ display:flex; gap:25px; }
 
 .nav-links a{
     font-size:14px;
@@ -76,30 +63,22 @@ img{
     padding-bottom:5px;
 }
 
-.nav-links a:hover{
-    color:var(--primary);
-}
+.nav-links a:hover{ color:var(--primary); }
 
 .nav-links a::after{
     content:'';
     position:absolute;
-    left:0;
-    bottom:0;
-    width:0%;
-    height:3px;
+    left:0; bottom:0;
+    width:0%; height:3px;
     background:var(--primary);
     border-radius:10px;
     transition:.3s;
 }
 
 .nav-links a:hover::after,
-.nav-links a.active::after{
-    width:100%;
-}
+.nav-links a.active::after{ width:100%; }
 
-.nav-links a.active{
-    color:var(--primary);
-}
+.nav-links a.active{ color:var(--primary); }
 
 .btn-register{
     background:var(--primary);
@@ -111,15 +90,11 @@ img{
     font-weight:600;
     transition:.3s;
 }
-
-.btn-register:hover{
-    transform:translateY(-2px);
-}
+.btn-register:hover{ transform:translateY(-2px); }
 
 /* =========================
    HERO
 ========================= */
-
 .hero{
     padding:90px 8%;
     background:linear-gradient(135deg,#f3f7ff,#ffffff);
@@ -139,9 +114,7 @@ img{
     color:var(--primary);
 }
 
-.hero-content span{
-    color:var(--secondary);
-}
+.hero-content span{ color:var(--secondary); }
 
 .hero-content p{
     font-size:18px;
@@ -179,17 +152,8 @@ img{
     padding-left:15px;
 }
 
-.input-group input{
-    width:100%;
-    border:none;
-    outline:none;
-    font-size:15px;
-}
-
-.search-icon{
-    margin-right:10px;
-    color:#94a3b8;
-}
+.input-group input{ width:100%; border:none; outline:none; font-size:15px; }
+.search-icon{ margin-right:10px; color:#94a3b8; }
 
 #checkBtn{
     background:var(--accent);
@@ -200,11 +164,7 @@ img{
     font-weight:700;
 }
 
-.hero-buttons{
-    margin-top:25px;
-    display:flex;
-    gap:12px;
-}
+.hero-buttons{ margin-top:25px; display:flex; gap:12px; }
 
 .hero-btn{
     display:flex;
@@ -219,34 +179,16 @@ img{
     font-size:14px;
 }
 
-.primary-btn{
-    background:var(--primary);
-    color:#fff;
-}
-
-.secondary-btn{
-    background:#e8eefc;
-    color:var(--primary);
-}
-
-.hero-image img{
-    width:100%;
-    max-width:450px;
-    margin:auto;
-}
+.primary-btn{ background:var(--primary); color:#fff; }
+.secondary-btn{ background:#e8eefc; color:var(--primary); }
+.hero-image img{ width:100%; max-width:450px; margin:auto; }
 
 /* =========================
-   SECTION
+   SECTION HEADER
 ========================= */
-
-.how-it-works{
-    padding:100px 8%;
-    background:var(--bg);
-}
-
 .section-header{
     text-align:center;
-    margin-bottom:50px;
+    margin-bottom:40px;
 }
 
 .section-header h2{
@@ -262,111 +204,95 @@ img{
 }
 
 /* =========================
-   SPLIDE
+   HOW IT WORKS
 ========================= */
-
-#caraKerjaSlider{
-    margin-top:40px;
-    width:100%;
-    overflow:hidden;
+.how-it-works{
+    padding:100px 8%;
+    background:var(--bg);
 }
 
+/* =========================
+   SPLIDE SHARED OVERRIDES
+========================= */
 .splide__track{
-    overflow:hidden !important;
-    padding:10px 0 30px;
+    padding:10px 0 20px !important;
 }
 
-.splide__list{
-    display:flex;
-    align-items:stretch;
-}
+.splide__list{ align-items:stretch; }
 
 .splide__slide{
     display:flex;
     height:auto;
 }
 
+/* Arrow & pagination colour */
+.splide__arrow{
+    background:var(--primary);
+    opacity:1;
+}
+.splide__arrow svg{ fill:#fff; }
+.splide__arrow:hover{ background:var(--secondary); }
+
+.splide__pagination__page{ background:#cbd5e1; }
+.splide__pagination__page.is-active{ background:var(--primary); transform:scale(1.3); }
+
+/* =========================
+   STEP CARD
+========================= */
 .step-card{
     background:#fff;
     border-radius:24px;
     padding:35px 25px;
     text-align:center;
     box-shadow:0 5px 20px rgba(0,0,0,.06);
-
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
-
+    justify-content:flex-start;
     width:100%;
     height:100%;
-
     transition:.3s;
 }
 
-.step-card:hover{
-    transform:translateY(-5px);
-}
+.step-card:hover{ transform:translateY(-5px); }
 
 .step-icon{
     width:70px;
     height:70px;
     border-radius:20px;
     background:#f1f5ff;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     position:relative;
     margin-bottom:20px;
-
     font-size:24px;
     color:var(--primary);
+    flex-shrink:0;
 }
 
 .step-icon span{
     position:absolute;
-    top:-8px;
-    right:-8px;
-
-    width:24px;
-    height:24px;
-
+    top:-8px; right:-8px;
+    width:24px; height:24px;
     background:var(--accent);
     border-radius:50%;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     font-size:12px;
     font-weight:700;
 }
 
-.step-card h4{
-    font-size:18px;
-    margin-bottom:12px;
-}
-
-.step-card p{
-    font-size:15px;
-    color:var(--light);
-}
+.step-card h4{ font-size:18px; margin-bottom:12px; }
+.step-card p{ font-size:15px; color:var(--light); }
 
 /* =========================
-   MERCHANT
+   MERCHANT SECTION
 ========================= */
-
 .merchant-section{
     padding:60px 8%;
     background:#eef2f7;
-}
-
-.merchant-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
 }
 
 .merchant-card{
@@ -375,26 +301,20 @@ img{
     padding:40px 30px;
     text-align:center;
     box-shadow:0 5px 20px rgba(0,0,0,.06);
-
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-
     transition:.3s;
-
-    min-width:0;
     width:100%;
+    height:100%;
 }
 
-.merchant-card:hover{
-    transform:translateY(-8px);
-}
+.merchant-card:hover{ transform:translateY(-8px); }
 
 .merchant-icon{
     width:180px;
     height:180px;
     margin:auto;
-
     display:flex;
     justify-content:center;
     align-items:center;
@@ -406,14 +326,8 @@ img{
     object-fit:contain;
 }
 
-.merchant-card h3{
-    margin:20px 0 10px;
-}
-
-.merchant-card p{
-    color:var(--light);
-    margin-bottom:25px;
-}
+.merchant-card h3{ margin:20px 0 10px; }
+.merchant-card p{ color:var(--light); margin-bottom:25px; }
 
 .merchant-btn{
     background:var(--primary);
@@ -422,12 +336,12 @@ img{
     padding:12px;
     border-radius:10px;
     font-weight:600;
+    display:block;
 }
 
 /* =========================
    CTA
 ========================= */
-
 .cta-section{
     padding:80px 8%;
     background:linear-gradient(135deg,#1b2b7a,#3249b9);
@@ -435,10 +349,7 @@ img{
     color:#fff;
 }
 
-.cta-section h2{
-    font-size:48px;
-    margin-bottom:18px;
-}
+.cta-section h2{ font-size:48px; margin-bottom:18px; }
 
 .cta-section p{
     font-size:18px;
@@ -462,12 +373,10 @@ img{
     display:inline-flex;
     align-items:center;
     justify-content:center;
+    gap:8px;
 }
 
-.primary-cta{
-    background:var(--accent);
-    color:var(--primary);
-}
+.primary-cta{ background:var(--accent); color:var(--primary); }
 
 .secondary-cta{
     background:rgba(255,255,255,.15);
@@ -478,7 +387,6 @@ img{
 /* =========================
    FOOTER
 ========================= */
-
 .footer{
     background:#0f172a;
     color:#cbd5e1;
@@ -491,15 +399,8 @@ img{
     gap:20px;
 }
 
-.footer-logo{
-    width:150px;
-    margin-bottom:20px;
-}
-
-.footer-col h4{
-    color:#fff;
-    margin-bottom:20px;
-}
+.footer-logo{ width:150px; margin-bottom:20px; }
+.footer-col h4{ color:#fff; margin-bottom:20px; }
 
 .footer-col a{
     display:block;
@@ -509,10 +410,7 @@ img{
     font-size:14px;
 }
 
-.footer-col p{
-    margin-bottom:6px;
-    font-size:14px;
-}
+.footer-col p{ margin-bottom:6px; font-size:14px; }
 
 .footer-bottom{
     border-top:1px solid #334155;
@@ -524,332 +422,71 @@ img{
 /* =========================
    HAMBURGER
 ========================= */
-
-.hamburger{
-    display:none;
-    font-size:25px;
-    cursor:pointer;
-}
+.hamburger{ display:none; font-size:25px; cursor:pointer; }
 
 /* =========================
-   TABLET
+   TABLET ≤ 900px
 ========================= */
-
 @media(max-width:900px){
 
-    .hero-container{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
+    .hero-container{ grid-template-columns:1fr; text-align:center; }
+    .hero-content p{ margin:auto auto 30px; }
+    .action-box{ margin:auto; }
 
-    .hero-content p{
-        margin:auto auto 30px;
-    }
+    .footer-grid{ grid-template-columns:1fr 1fr; }
 
-    .action-box{
-        margin:auto;
-    }
-
-    /* FIX CARD TABLET */
-    .merchant-grid{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-        gap:20px;
-        align-items:stretch;
-    }
-
-    .merchant-card{
-        width:100%;
-        min-width:0;
-        padding:28px 20px;
-        border-radius:20px;
-    }
-
-    .merchant-icon{
-        width:110px;
-        height:110px;
-    }
-
-    .merchant-icon img{
-        width:90px;
-        height:90px;
-    }
-
-    .merchant-card h3{
-        font-size:18px;
-        margin:15px 0 8px;
-    }
-
-    .merchant-card p{
-        font-size:14px;
-        margin-bottom:18px;
-    }
-
-    .merchant-btn{
-        padding:10px;
-        font-size:14px;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
-    }
+    .merchant-icon{ width:110px; height:110px; }
+    .merchant-icon img{ width:90px; height:90px; }
+    .merchant-card{ padding:28px 20px; border-radius:20px; }
+    .merchant-card h3{ font-size:18px; margin:15px 0 8px; }
+    .merchant-card p{ font-size:14px; margin-bottom:18px; }
+    .merchant-btn{ padding:10px; font-size:14px; }
 }
 
 /* =========================
-   MOBILE
+   MOBILE ≤ 600px
 ========================= */
-
 @media(max-width:600px){
 
-    .navbar{
-        position:relative;
-    }
+    .navbar{ position:relative; }
 
-    .hamburger{
-        display:block;
-        z-index:1001;
-    }
+    .hamburger{ display:block; z-index:1001; }
 
     .nav-menu{
         position:absolute;
-        top:100%;
-        left:0;
+        top:100%; left:0;
         width:100%;
         background:#fff;
-
         display:none;
         flex-direction:column;
         align-items:flex-start;
-
         padding:20px;
-
         box-shadow:0 10px 25px rgba(0,0,0,.08);
     }
 
-    .nav-menu.active{
-        display:flex;
-    }
+    .nav-menu.active{ display:flex; }
+    .nav-links{ flex-direction:column; width:100%; gap:20px; }
+    .nav-right{ width:100%; margin-top:20px; }
+    .btn-register{ display:block; width:100%; text-align:center; }
 
-    .nav-links{
-        flex-direction:column;
-        width:100%;
-        gap:20px;
-    }
+    .hero{ padding:70px 5%; }
+    .hero-content h1{ font-size:32px; }
+    .hero-buttons{ flex-wrap:nowrap; }
+    .hero-btn{ flex:1; min-width:0; font-size:13px; padding:12px 10px; }
 
-    .nav-right{
-        width:100%;
-        margin-top:20px;
-    }
+    .cta-buttons{ flex-wrap:nowrap; width:100%; }
+    .cta-button{ flex:1; font-size:13px; padding:14px 10px; }
 
-    .btn-register{
-        display:block;
-        width:100%;
-        text-align:center;
-    }
+    .footer-grid{ grid-template-columns:1fr; }
 
-    .hero{
-        padding:70px 5%;
-    }
+    .section-header h2{ font-size:28px; }
 
-    .hero-content h1{
-        font-size:32px;
-    }
+    .how-it-works{ padding:70px 16px; }
 
-    .hero-buttons{
-        flex-wrap:nowrap;
-    }
+    .step-card{ padding:24px 18px; border-radius:20px; }
+    .step-card h4{ font-size:16px; }
+    .step-card p{ font-size:13px; line-height:1.6; }
 
-    .hero-btn{
-        flex:1;
-        min-width:0;
-        font-size:13px;
-        padding:12px 10px;
-    }
-
-    .merchant-grid{
-        grid-template-columns:1fr;
-    }
-
-    .cta-buttons{
-        flex-wrap:nowrap;
-        width:100%;
-    }
-
-    .cta-button{
-        flex:1;
-        font-size:13px;
-        padding:14px 10px;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
-
-    .section-header h2{
-        font-size:28px;
-    }
-
-    .how-it-works{
-        padding:70px 16px;
-    }
-
-    .step-card{
-        padding:24px 18px;
-        border-radius:20px;
-    }
-
-    .step-card h4{
-        font-size:16px;
-    }
-
-    .step-card p{
-        font-size:13px;
-        line-height:1.6;
-    }
-}
-
-/* =========================
-   FIX CARD TABLET FINAL
-========================= */
-
-@media screen and (min-width:601px) and (max-width:900px){
-
-    .merchant-grid{
-        display:grid;
-        grid-template-columns:repeat(3, 1fr) !important;
-        gap:16px;
-        width:100%;
-        align-items:stretch;
-    }
-
-    .merchant-card{
-        width:100%;
-        min-width:0;
-        padding:20px 14px !important;
-        border-radius:18px;
-    }
-
-    .merchant-icon{
-        width:90px;
-        height:90px;
-    }
-
-    .merchant-icon img{
-        width:70px;
-        height:70px;
-        object-fit:contain;
-    }
-
-    .merchant-card h3{
-        font-size:16px;
-        margin:12px 0 8px;
-    }
-
-    .merchant-card p{
-        font-size:13px;
-        line-height:1.5;
-        margin-bottom:15px;
-    }
-
-    .merchant-btn{
-        width:100%;
-        padding:10px;
-        font-size:13px;
-    }
-
-}
-/* =========================
-   MERCHANT SLIDER (mobile/desktop toggle)
-========================= */
-
-/* Desktop: show grid, hide slider */
-.merchant-grid-desktop {
-    display: grid;
-}
-
-.merchant-splide {
-    display: none;
-}
-
-/* Mobile: hide grid, show slider */
-@media (max-width: 600px) {
-
-    .merchant-grid-desktop {
-        display: none !important;
-    }
-
-    .merchant-splide {
-        display: block;
-        margin-top: 20px;
-    }
-
-    /* Make merchant card inside splide fill properly */
-    .merchant-splide .splide__slide {
-        display: flex;
-        align-items: stretch;
-    }
-
-    .merchant-splide .merchant-card {
-        width: 100%;
-        min-width: 0;
-    }
-
-    /* Splide pagination dots colour */
-    .splide__pagination__page.is-active {
-        background: var(--primary);
-    }
-}
-
-/* Section-title / section-header spacing fix for merchant */
-.merchant-section .section-header {
-    margin-bottom: 30px;
-}
-
-/* =========================
-   HOW IT WORKS — DESKTOP GRID / MOBILE SLIDER
-========================= */
-
-/* Desktop grid: 5 equal columns, same card style as merchant */
-.step-grid-desktop {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    margin-top: 40px;
-    align-items: stretch;
-}
-
-.step-grid-desktop .step-card {
-    height: 100%;
-}
-
-/* Hide mobile slider on desktop */
-.step-splide {
-    display: none;
-}
-
-/* Tablet: 3 columns for step grid */
-@media (max-width: 1024px) and (min-width: 601px) {
-    .step-grid-desktop {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* Mobile: hide desktop grid, show Splide */
-@media (max-width: 600px) {
-    .step-grid-desktop {
-        display: none !important;
-    }
-
-    .step-splide {
-        display: block;
-        margin-top: 24px;
-    }
-
-    .step-splide .splide__slide {
-        display: flex;
-        align-items: stretch;
-    }
-
-    .step-splide .step-card {
-        width: 100%;
-    }
+    .merchant-icon{ width:120px; height:120px; }
+    .merchant-icon img{ width:100px; height:100px; }
 }
