@@ -97,12 +97,19 @@ document.addEventListener('DOMContentLoaded', function () {
         drag       : true,
 
         breakpoints: {
-            900: {
-                perPage: 2,
+            1024: {
+                perPage: 3,
             },
 
-            600: {
+            768: {
                 perPage: 1,
+                gap: '16px',
+                padding:'1rem',
+            },
+
+            480:{
+                perPage:1,
+                padding:'0.5rem',
             }
         }
     }).mount();
