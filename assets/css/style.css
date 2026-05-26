@@ -757,3 +757,49 @@ img{
     }
 
 }
+/* =========================
+   MERCHANT SLIDER (mobile/desktop toggle)
+========================= */
+
+/* Desktop: show grid, hide slider */
+.merchant-grid-desktop {
+    display: grid;
+}
+
+.merchant-splide {
+    display: none;
+}
+
+/* Mobile: hide grid, show slider */
+@media (max-width: 600px) {
+
+    .merchant-grid-desktop {
+        display: none !important;
+    }
+
+    .merchant-splide {
+        display: block;
+        margin-top: 20px;
+    }
+
+    /* Make merchant card inside splide fill properly */
+    .merchant-splide .splide__slide {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .merchant-splide .merchant-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* Splide pagination dots colour */
+    .splide__pagination__page.is-active {
+        background: var(--primary);
+    }
+}
+
+/* Section-title / section-header spacing fix for merchant */
+.merchant-section .section-header {
+    margin-bottom: 30px;
+}
