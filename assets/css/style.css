@@ -706,3 +706,54 @@ img{
         line-height:1.6;
     }
 }
+
+/* =========================
+   FIX CARD TABLET FINAL
+========================= */
+
+@media screen and (min-width:601px) and (max-width:900px){
+
+    .merchant-grid{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr) !important;
+        gap:16px;
+        width:100%;
+        align-items:stretch;
+    }
+
+    .merchant-card{
+        width:100%;
+        min-width:0;
+        padding:20px 14px !important;
+        border-radius:18px;
+    }
+
+    .merchant-icon{
+        width:90px;
+        height:90px;
+    }
+
+    .merchant-icon img{
+        width:70px;
+        height:70px;
+        object-fit:contain;
+    }
+
+    .merchant-card h3{
+        font-size:16px;
+        margin:12px 0 8px;
+    }
+
+    .merchant-card p{
+        font-size:13px;
+        line-height:1.5;
+        margin-bottom:15px;
+    }
+
+    .merchant-btn{
+        width:100%;
+        padding:10px;
+        font-size:13px;
+    }
+
+}
