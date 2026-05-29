@@ -435,8 +435,8 @@ img{ max-width:100%; height:auto; display:block; }
 
     .footer-grid{ grid-template-columns:1fr 1fr; }
 
-    .merchant-icon{ width:110px; height:110px; }
-    .merchant-icon img{ width:90px; height:90px; }
+    .merchant-icon{ width:140px; height:140px; }
+    .merchant-icon img{ width:100px; height:100px; object-fit:contain; }
     .merchant-card{ padding:28px 20px; border-radius:20px; }
     .merchant-card h3{ font-size:18px; margin:15px 0 8px; }
     .merchant-card p{ font-size:14px; margin-bottom:18px; }
