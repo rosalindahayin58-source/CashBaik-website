@@ -312,12 +312,12 @@ img{ max-width:100%; height:auto; display:block; }
 .merchant-card:hover{ transform:translateY(-8px); }
 
 .merchant-icon{
-    width:180px;
-    height:180px;
-    margin:auto;
+    width:120px;
+    height:120px;
+    margin:0 auto 20px;
     display:flex;
     justify-content:center;
-    align-items:center;
+    overflow:hidden;
 }
 
 .merchant-icon img{
