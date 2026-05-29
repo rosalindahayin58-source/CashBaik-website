@@ -65,7 +65,7 @@
         </div>
     </section>
 
-    <!-- HOW IT WORKS -->
+    <!-- HOW IT WORKS — single Splide, all breakpoints -->
     <section class="how-it-works" id="cara-kerja">
         <div class="section-header">
             <h2>Bagaimana Cara Kerja CashBaik?</h2>
@@ -136,7 +136,7 @@
         </div>
     </section>
 
-    <!-- MERCHANT -->
+    <!-- MERCHANT — single Splide, all breakpoints -->
     <section class="merchant-section" id="merchant">
         <div class="section-header">
             <h2>Merchant Populer</h2>
@@ -147,7 +147,6 @@
             <div class="splide__track">
                 <ul class="splide__list">
 
-                    <!-- SHOPEE -->
                     <li class="splide__slide">
                         <div class="merchant-card">
                             <div class="merchant-icon">
@@ -159,25 +158,10 @@
                         </div>
                     </li>
 
-                    <!-- TOKOPEDIA — SVG inline, tidak bergantung CDN -->
                     <li class="splide__slide">
                         <div class="merchant-card">
                             <div class="merchant-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 180" style="width:100%;height:100%;max-width:150px;max-height:150px">
-                                    <!-- Icon rumah/toko Tokopedia -->
-                                    <g transform="translate(75,8)">
-                                        <!-- Badan toko -->
-                                        <rect x="0" y="42" width="70" height="55" rx="7" fill="#42b549"/>
-                                        <!-- Atap -->
-                                        <polygon points="35,0 -8,45 78,45" fill="#42b549"/>
-                                        <!-- Pintu/kotak putih di tengah -->
-                                        <rect x="20" y="60" width="30" height="37" rx="5" fill="white"/>
-                                        <!-- Lingkaran kecil di atap (detail logo) -->
-                                        <circle cx="35" cy="30" r="9" fill="white"/>
-                                    </g>
-                                    <!-- Teks tokopedia -->
-                                    <text x="110" y="128" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#42b549" text-anchor="middle">tokopedia</text>
-                                </svg>
+                                <img src="https://www.vecteezy.com/png/54650845-tokopedia-logo-free-tokopedia-logo-download" alt="Tokopedia">
                             </div>
                             <h3>Tokopedia</h3>
                             <p>Flash sale dan cashback tambahan setiap hari.</p>
@@ -185,16 +169,10 @@
                         </div>
                     </li>
 
-                    <!-- LAZADA — SVG inline, tidak bergantung CDN -->
                     <li class="splide__slide">
                         <div class="merchant-card">
                             <div class="merchant-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 180" style="width:100%;height:100%;max-width:150px;max-height:150px">
-                                    <!-- Kotak latar oranye -->
-                                    <rect x="10" y="30" width="200" height="120" rx="16" fill="#F57226"/>
-                                    <!-- Teks Lazada putih -->
-                                    <text x="110" y="108" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="900" fill="white" text-anchor="middle">Lazada</text>
-                                </svg>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Lazada_Logo.svg/1024px-Lazada_Logo.svg.png" alt="Lazada">
                             </div>
                             <h3>Lazada</h3>
                             <p>Voucher diskon, gratis ongkir dan cashback harian.</p>
@@ -256,6 +234,7 @@
     <script>
     document.addEventListener('DOMContentLoaded', function () {
 
+        // HOW IT WORKS — 5 cards desktop, 3 tablet, 1 mobile
         new Splide('#caraKerjaSlider', {
             type       : 'loop',
             perPage    : 5,
@@ -272,6 +251,7 @@
             }
         }).mount();
 
+        // MERCHANT — 3 cards desktop, 2 tablet, 1 mobile
         new Splide('#merchantSlider', {
             type       : 'loop',
             perPage    : 3,
